@@ -9,7 +9,7 @@ export default function HomePage() {
       {/* Bannière
       photo en fond ?*/}
       
-      <section className="w-full bg-amber-400 flex flex-col justify-center items-center" style={{ minHeight: 'calc(100vh - 64px)' }}>
+      <section className="w-full h-screen bg-amber-400 flex flex-col justify-center items-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Lorena - Au mot juste 
         </h1>
@@ -27,7 +27,7 @@ export default function HomePage() {
         </button>
       </section>
 
-      <section id="prestations" className="py-20 px-4 bg-red-500">
+      <section id="prestations" className="py-20 px-4 bg-red-500" style={{ minHeight: 'calc(100vh - 64px)' }}>
         <h2 className="text-3xl font-bold text-center mb-12">Mes prestations</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div className="bg-white shadow-md rounded-lg p-6 text-center">
