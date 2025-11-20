@@ -20,12 +20,12 @@ export default function Header() {
         (scrolled ? "bg-white shadow-sm" : "bg-transparent")
       }
     >
-      <nav className="max-w-4xl mx-auto flex justify-between items-center px-4">
+      <nav className="max-w-7xl mx-auto flex justify-between items-center px-4">
         <Link href="/">
-          <Image src="/logo.svg" alt="Logo" width={150} height={100} />
+          <Image src="/logo.svg" alt="Logo" width={160} height={100} />
         </Link>
 
-        <div className="flex space-x-6">
+        <div className="flex space-x-8 text-black text-lg">
           <NavLink href="/">Accueil</NavLink>
           <NavLink href="/prestations">Prestations</NavLink>
           <NavLink href="/a-propos">À propos</NavLink>

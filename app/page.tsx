@@ -9,22 +9,26 @@ export default function HomePage() {
       {/* Bannière
       photo en fond ?*/}
       
-      <section className="w-full h-screen bg-amber-400 flex flex-col justify-center items-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Lorena - Au mot juste 
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6">
-          Correctrice-relectrice
-        </p>
-        <button
-          onClick={() => {
-            const section = document.getElementById("prestations");
-            section?.scrollIntoView({ behavior: "smooth" });
-          }}
-          className="bg-white text-amber-500 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition"
-        >
-          Me découvrir
-        </button>
+      <section className="w-full h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center relative"
+        style={{ backgroundImage: "url('/image-carnet.jpg')" }}>
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="relative z-10 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Lorena - Au mot juste 
+          </h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6">
+            Correctrice-relectrice
+          </p>
+          <button
+            onClick={() => {
+              const section = document.getElementById("prestations");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition"
+          >
+            Me découvrir
+          </button>
+        </div>
       </section>
 
       <section id="prestations" className="py-20 px-4 bg-red-500" style={{ minHeight: 'calc(100vh - 64px)' }}>
