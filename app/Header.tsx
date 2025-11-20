@@ -25,7 +25,7 @@ export default function Header() {
           <Image src="/logo.svg" alt="Logo" width={160} height={100} />
         </Link>
 
-        <div className="flex space-x-8 text-black text-lg">
+        <div className="flex space-x-8 text-gray-800 text-lg">
           <NavLink href="/">Accueil</NavLink>
           <NavLink href="/prestations">Prestations</NavLink>
           <NavLink href="/a-propos">À propos</NavLink>

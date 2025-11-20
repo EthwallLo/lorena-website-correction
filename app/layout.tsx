@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${montserrat.className} bg-white text-gray-900`}>
         <Header />
 
-        <main> 
+        <main className="bg-gray-100"> 
           {children}
         </main>
 
