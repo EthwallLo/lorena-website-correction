@@ -1,82 +1,70 @@
-
 "use client";
 
 export default function HomePage() {
   return (
     <div className="space-y-16">
 
-      {/* Faire un bouton pour passer en mode sombre*/}
-      {/* Bannière
-      photo en fond ?*/}
-      
-      <section className="w-full h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center relative"
-        style={{ backgroundImage: "url('/image-carnet.jpg')" }}>
-        <div className="absolute inset-0 bg-black/30"></div>
+      <section className="w-full h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center relative" style={{ backgroundImage: "url('/image-carnet.jpg')" }}>
+        <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Lorena - Au mot juste 
-          </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6">
-            Correctrice-relectrice
-          </p>
-          <button
-            onClick={() => {
-              const section = document.getElementById("prestations");
-              section?.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition"
-          >
-            Me découvrir
-          </button>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Lorena - Au mot juste</h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6 text-[#C9B59C]">Correction, relecture et réécriture</p>
+          <button onClick={() => { const section = document.getElementById("prestations"); section?.scrollIntoView({ behavior: "smooth" }); }} className="bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">Me découvrir</button>
         </div>
       </section>
 
-      <section id="prestations" className="py-20 px-4 bg-red-500" style={{ minHeight: 'calc(100vh - 64px)' }}>
-        <h2 className="text-3xl font-bold text-center mb-12">Mes prestations</h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="bg-white shadow-md rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold mb-2">Correction simple</h3>
-            <p className="text-gray-700 mb-2">Orthographe, grammaire, conjugaison et typographie.</p>
-            <p className="font-bold">3 € / 1000 signes</p>
+      <section id="prestations" className="bg-gray-200" style={{ minHeight: "80vh", paddingTop: "6rem", paddingBottom: "6rem" }}>
+        <h2 className="text-3xl font-bold text-center mb-12 text-[#C9B59C]">Mes prestations</h2>
+        <p className="text-lg md:text-xl text-center mb-12 text-[#C9B59C] font-medium">Correction</p>
+
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
+          <div className="bg-white shadow-md rounded-lg p-8 text-center hover:scale-105 transition-transform duration-300">
+            <h3 className="text-2xl font-semibold mb-3 text-black">Correction</h3>
+            <h4 className="text-[#C9B59C] font-medium mb-4">Pour les textes jamais corrigés</h4>
+            <p className="text-gray-700 mb-4">La correction consiste à vérifier l’orthographe, la grammaire, la ponctuation et la typographie, tout en proposant des ajustements mineurs pour clarifier le texte.</p>
+            <p className="text-gray-700 mb-4">Idéal pour les textes originaux qui n’ont encore jamais été relus par un correcteur.</p>
+            <p className="text-gray-600 font-bold text-lg">3 € / 1000 signes</p>
           </div>
-          <div className="bg-white shadow-md rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold mb-2">Correction approfondie</h3>
-            <p className="text-gray-700 mb-2">Correction simple, avec reformulations et vérifications de cohérence.</p>
-            <p className="font-bold">5 € / 1000 signes</p>
+
+          <div className="bg-white shadow-md rounded-lg p-8 text-center hover:scale-105 transition-transform duration-300">
+            <h3 className="text-2xl font-semibold mb-3 text-black">Relecture</h3>
+            <h4 className="text-[#C9B59C] font-medium mb-4">Pour les textes déjà travaillés</h4>
+            <p className="text-gray-700 mb-4">La relecture permet de vérifier une deuxième fois l’orthographe, la ponctuation, la cohérence et la fluidité.</p>
+            <p className="text-gray-700 mb-4">C’est idéal pour un texte qui a déjà été corrigé et nécessite une dernière vérification avant publication.</p>
+            <p className="text-gray-600 font-bold text-lg">2 € / 1000 signes</p>
           </div>
-          <div className="bg-white shadow-md rounded-lg p-6 text-center">
-            <h3 className="text-xl font-semibold mb-2">Réécriture avec correction</h3>
-            <p className="text-gray-700 mb-2">Correction approfondie, avec harmonisation stylistique et fluidité.</p>
-            <p className="font-bold">10 € / 1000 signes</p>
-          </div>
+
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <a href="/contact" className="bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">Me contacter</a>
         </div>
       </section>
 
-      {/* Section Accessibilité */}
-      {/* <section className="py-20 bg-blue-50 px-4">
-        <h2 className="text-3xl font-bold text-center mb-6">Accessibilité de contenu web</h2>
-        <p className="text-gray-700 max-w-3xl mx-auto text-center mb-6">
-          J’aide les créateurs de contenu à rendre leurs textes clairs, lisibles et accessibles à tous.  
-          Vérification des titres, contrastes, balises alt, navigation clavier et lisibilité.
-        </p>
-        <div className="text-center">
-          <a
-            href="/contact"
-            className="inline-block bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition"
-          >
-            Demander un audit
-          </a>
-        </div>
-      </section> */}
+      <section id="a-propos" className="bg-gray-100" style={{ minHeight: "90vh", paddingTop: "6rem", paddingBottom: "6rem" }}>
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 px-6">
+          
+          <div className="md:w-1/2">
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">À propos de moi</h2>
+            <p className="text-gray-700 mb-6">
+              Je m'appelle Lorena et je suis passionnée par la langue française. J'accompagne particuliers et professionnels dans la correction, la relecture et la réécriture de leurs documents pour leur permettre de communiquer de manière claire, précise et élégante.  
+              Mon objectif est de faire ressortir le meilleur de vos textes tout en respectant votre style et votre voix.
+            </p>
+            <button 
+              onClick={() => window.location.href = '/a-propos'} 
+              className="bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition"
+            >
+              Découvrir mon parcours
+            </button>
+          </div>
 
-      {/* Section À propos */}
-      {/* <section className="py-20 px-4">
-        <h2 className="text-3xl font-bold text-center mb-6">À propos de moi</h2>
-        <p className="text-gray-700 max-w-3xl mx-auto text-center">
-          Passionnée par la langue et la clarté des textes, je mets mon œil attentif au service de vos écrits.  
-          Étudiante, auteurs et professionnels me font confiance pour rendre leurs contenus impeccables et lisibles.
-        </p>
-      </section> */}
+          <div className="md:w-1/2 flex justify-center">
+            <img src="/photo-lorena.jpg" alt="Lorena" className="w-4/5 rounded-lg shadow-lg object-cover" />
+          </div>
+
+        </div>
+      </section>
     </div>
   );
 }

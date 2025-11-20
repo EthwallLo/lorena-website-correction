@@ -1,6 +1,6 @@
 import "./globals.css";
-import Header from "./Header";
-import "./globals.css";
+import Header from "./header";
+import Footer from "./footer"; 
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -22,6 +22,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main> 
           {children}
         </main>
+
+        <Footer />
       </body>
     </html>
   );
