@@ -2,22 +2,47 @@
 
 export default function HomePage() {
   return (
-    <div className="space-y-16">
+    <div>
 
       {/* Ajouter packs + section accessibilité + infos à comprendre tarifs*/}
 
-      <section className="w-full relative h-[70vh] flex justify-center items-center" style={{ backgroundImage: "url('/image-carnet.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="w-full relative h-screen flex justify-center items-center" style={{ backgroundImage: "url('/image-carnet.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="absolute inset-0 bg-black/10"></div> {/* voile noir réduit */}
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
           <h1 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800">Au mot juste</h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto mb-2 text-gray-600 font-medium">Lorena Guedouani - Correction et relecture professionnelle</p>
           <p className="text-md md:text-lg max-w-2xl mx-auto text-gray-600">Je vous accompagne dans la correction de vos écrits.</p>
-          <button 
-            onClick={() => { const section = document.getElementById("a-propos"); section?.scrollIntoView({ behavior: "smooth" }); }} 
-            className="bg-white text-gray-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition mt-4"
+          <a
+            href="#a-propos"
+            onClick={(e) => {
+              e.preventDefault();
+              const section = document.getElementById("a-propos");
+              if (section) {
+                const yOffset = -70;
+                const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
+            }}
+            className="relative inline-block text-lg group cursor-pointer mt-6"
           >
-            Me découvrir
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              const section = document.getElementById("a-propos");
+              if (section) {
+                const yOffset = -70;
+                const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
+            }}
+            className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-gray-100 px-6 font-medium text-gray-800 transition hover:scale-105 mt-6 cursor-pointer"
+          >
+            <span>Me découvrir ↓</span>
+            <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+              <div className="relative h-full w-8 bg-gray-300/50"></div>
+            </div>
           </button>
+          </a>
         </div>
       </section>
 
@@ -41,7 +66,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="prestations" className="bg-[##F7F3EA] justify-center items-center" style={{ minHeight: "70vh", paddingTop: "8rem",  paddingBottom: "5rem"}}>
+      <section id="prestations" className="justify-center items-center" style={{ backgroundImage: "url('/image-carnet-2.jpg')", backgroundPosition: "center", 
+        backgroundSize: "cover", minHeight: "80vh", paddingTop: "8rem",  paddingBottom: "5rem"}}>
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-600">Mes prestations</h2>
 
         <p className="text-lg md:text-xl text-center mb-12 text-gray-600 font-medium">Correction</p>
