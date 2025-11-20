@@ -6,7 +6,7 @@ export default function HomePage() {
 
       {/* Ajouter packs + section accessibilité + infos à comprendre tarifs*/}
 
-      <section className="w-full relative h-[60vh] flex justify-center items-center" style={{ backgroundImage: "url('/image-carnet.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="w-full relative h-[70vh] flex justify-center items-center" style={{ backgroundImage: "url('/image-carnet.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="absolute inset-0 bg-black/10"></div> {/* voile noir réduit */}
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
           <h1 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800">Au mot juste</h1>
@@ -41,24 +41,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="prestations" className="bg-gray-200 justify-center items-center" style={{ minHeight: "70vh", paddingTop: "8rem",  paddingBottom: "5rem"}}>
+      <section id="prestations" className="bg-[##F7F3EA] justify-center items-center" style={{ minHeight: "70vh", paddingTop: "8rem",  paddingBottom: "5rem"}}>
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-600">Mes prestations</h2>
+
         <p className="text-lg md:text-xl text-center mb-12 text-gray-600 font-medium">Correction</p>
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="bg-white shadow-md rounded-lg p-8 text-center hover:scale-105 transition-transform duration-300">
-            <h3 className="text-2xl font-semibold mb-3 text-[#957C62]">Correction</h3>
-            <h4 className="text-[#C9B59C] font-medium mb-4">Pour les textes jamais corrigés</h4>
+            <img src="/plume.svg" alt="Icône plume" className="w-[50px] mx-auto mb-4" />
+            <h3 className="text-2xl font-semibold mb-3 text-gray-700">Correction</h3>
+            <h4 className="text-gray-700 font-medium mb-4">Pour les textes jamais corrigés</h4>
             <p className="text-gray-700 mb-4">La correction consiste à vérifier l’orthographe, la grammaire, la ponctuation et la typographie, tout en proposant des ajustements mineurs pour clarifier le texte.</p>
             <p className="text-gray-700 mb-4">Idéal pour les textes originaux qui n’ont encore jamais été relus par un correcteur.</p>
-            <p className="text-[#74512D] font-bold text-lg">3 € / 1000 signes</p>
+            <p className="text-gray-700 font-bold text-lg">3 € / 1000 signes</p>
           </div>
 
           <div className="bg-white shadow-md rounded-lg p-8 text-center hover:scale-105 transition-transform duration-300">
-            <h3 className="text-2xl font-semibold mb-3 text-[#957C62]">Relecture</h3>
-            <h4 className="text-[#C9B59C] font-medium mb-4">Pour les textes déjà travaillés</h4>
+            <img src="/livre.svg" alt="Icône plume" className="w-[50px] mx-auto mb-4"/>
+            <h3 className="text-2xl font-semibold mb-3 text-gray-700">Relecture</h3>
+            <h4 className="text-gray-700 font-medium mb-4">Pour les textes déjà travaillés</h4>
             <p className="text-gray-700 mb-4">La relecture permet de vérifier une deuxième fois l’orthographe, la ponctuation, la cohérence et la fluidité.</p>
             <p className="text-gray-700 mb-4">C’est idéal pour un texte qui a déjà été corrigé et nécessite une dernière vérification avant publication.</p>
-            <p className="text-[#74512D] font-bold text-lg">2 € / 1000 signes</p>
+            <p className="text-gray-700 font-bold text-lg">2 € / 1000 signes</p>
           </div>
         </div>
 
