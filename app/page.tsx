@@ -21,7 +21,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="a-propos" className="bg-gray-100" style={{ minHeight: "50vh", paddingTop: "8rem"}}>
+      <section id="a-propos" className="bg-gray-100" style={{ backgroundImage: "url('/image-bureau.jpg')", backgroundSize: "cover", backgroundPosition: "center", minHeight: "90vh", paddingTop: "11rem"}}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 px-6">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-600">À propos de moi</h2>
@@ -30,14 +30,13 @@ export default function HomePage() {
             <p className="text-gray-700 mb-6">Mon objectif est de faire ressortir le meilleur de vos textes tout en respectant votre style et votre voix.</p>
             <button 
               onClick={() => window.location.href = '/a-propos'} 
-              className="bg-white text-gray-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition"
-            >
+              className="bg-white text-gray-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-200 transition">
               Découvrir mon parcours
             </button>
           </div>
 
           <div className="md:w-1/2 flex justify-center">
-            <img src="/photo-lorena.jpg" alt="Lorena" className="w-4/5 rounded-lg shadow-lg object-cover" />
+            <img src="/cadre-lorena.png" alt="Lorena" className="w-[500px]"/>
           </div>
         </div>
       </section>
