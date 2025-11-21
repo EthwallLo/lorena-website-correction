@@ -1,5 +1,32 @@
 "use client";
 
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const formData = {
+    name: e.target[0].value,
+    email: e.target[1].value,
+    phone: e.target[2].value,
+    subject: e.target[3].value,
+    message: e.target[4].value,
+  };
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+    alert(data.message);
+    e.target.reset();
+  } catch (err) {
+    alert("Erreur lors de l'envoi du formulaire.");
+  }
+};
+
+
 export default function ContactPage() {
   return (
     <div className="w-full min-h-screen flex flex-col">
@@ -26,7 +53,7 @@ export default function ContactPage() {
               <p className="text-[15px] text-center text-gray-700 leading-relaxed">Une question, un projet, un besoin de correction ?</p>
               <p className="text-[15px] text-center text-gray-700 leading-relaxed">Je serai ravie d’échanger avec vous.</p>
             </div>
-            <form className="grid sm:grid-cols-2 gap-4 text-gray-900 mt-8">
+            <form onSubmit={handleSubmit} className="grid sm:grid-cols-2 gap-4 text-gray-900 mt-8">
 
               <div>
                 <input
