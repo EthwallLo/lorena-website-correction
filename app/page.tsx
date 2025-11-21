@@ -1,4 +1,5 @@
 "use client";
+import Typewriter from "./typewriter";
 
 export default function HomePage() {
   return (
@@ -7,9 +8,9 @@ export default function HomePage() {
       {/* Ajouter packs + section accessibilité + infos à comprendre tarifs*/}
 
       <section className="w-full relative h-screen flex justify-center items-center" style={{ backgroundImage: "url('/image-carnet.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div className="absolute inset-0 bg-black/10"></div> {/* voile noir réduit */}
+        <div className="absolute inset-0 bg-black/10"></div> 
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800">Au mot juste</h1>
+          <Typewriter/><p className="font-cutive "></p>
           <p className="text-lg md:text-xl max-w-2xl mx-auto mb-2 text-gray-600 font-medium">Lorena Guedouani - Correction et relecture professionnelle</p>
           <p className="text-md md:text-lg max-w-2xl mx-auto text-gray-600">Je vous accompagne dans la correction de vos écrits.</p>
           <a
