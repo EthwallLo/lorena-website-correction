@@ -26,7 +26,6 @@ const handleSubmit = async (e) => {
   }
 };
 
-
 export default function ContactPage() {
   return (
     <div className="w-full min-h-screen flex flex-col">
