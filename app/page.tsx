@@ -46,15 +46,37 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-10 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
       </section>
 
-      <section id="decouvrir" className="relative justify-center items-center bg-white" style={{ minHeight: "40vh", paddingTop: "7rem",  paddingBottom: "5rem"}}>
-        <h2 className="text-3xl font-bold mb-6 text-[#B76E79] relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-[#B76E79] after:mt-3 text-center after:mx-auto">
-          Pourquoi faire appel à une correcrice-relectrice ?</h2>
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row text-center items-center gap-16 px-6">
-            <p className="text-gray-700 mb-6">Faire appel à un correcteur relecteur permet de garantir la qualité, la clarté et la crédibilité de vos écrits en éliminant les fautes d'orthographe, 
-              de grammaire, de syntaxe et de ponctuation</p>
-            <p className="text-gray-700 mb-6">Faire appel à un correcteur relecteur permet de garantir la qualité, la clarté et la crédibilité de vos écrits en éliminant les fautes d'orthographe, 
-              de grammaire, de syntaxe et de ponctuation</p>
+      <section id="decouvrir" className="relative justify-center items-center bg-white"
+        style={{ minHeight: "40vh", paddingTop: "5rem", paddingBottom: "5rem" }}>
+        <h2 className="text-3xl font-bold mb-10 text-[#B76E79] relative text-center
+          after:content-[''] after:block after:w-[130px] after:h-1 after:bg-[#B76E79] after:mt-3 after:mx-auto">
+          Pourquoi faire appel à une correctrice-relectrice ? </h2>
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 px-6 text-center md:text-left">
+          <div>
+            <p className="text-center text-gray-700 mb-6 leading-relaxed">
+              Même lorsqu’on maîtrise parfaitement la langue, il est extrêmement difficile de repérer ses propres erreurs : notre cerveau anticipe ce que l’on 
+              veut dire et ne voit plus les fautes, les maladresses ou les incohérences qui peuvent s’y glisser.
+            </p>
+
+            <p className="text-center text-gray-700 leading-relaxed">
+              Que vous soyez étudiant, professionnel ou auteur, la qualité de vos écrits influence fortement la façon dont on perçoit votre sérieux 
+              et vos compétences. Un document avec quelques erreurs suffit parfois à décrédibiliser un travail pourtant solide.
+            </p>
           </div>
+
+          <div>
+            <p className="text-center text-gray-700 mb-6 leading-relaxed">
+              La correction ne se limite pas à enlever les fautes. C’est un véritable travail de précision : harmonisation de la typographie, amélioration de la 
+              fluidité des phrases, reformulations douces pour rendre le texte plus clair, suppression des répétitions et vérification de la cohérence d’ensemble. 
+            </p>
+
+            <p className="text-center text-gray-700 leading-relaxed">
+              Faire appel à une correctrice-relectrice, c’est donc investir dans une communication plus claire, plus percutante et plus professionnelle. C’est 
+              l’assurance d’un texte qui reflète réellement votre intention, vos compétences et votre exigence.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="a-propos" className="relative bg-gray-100" style={{ backgroundImage: "url('/image-bureau.jpg')", backgroundSize: "cover", backgroundPosition: "center", minHeight: "90vh", paddingTop: "11rem"}}>
@@ -80,57 +102,135 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-10 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
       </section>
 
-      <section id="prestations" className="relative justify-center items-center" style={{ backgroundImage: "url('/image-carnet-2.jpg')", backgroundPosition: "center", 
-        backgroundSize: "cover", minHeight: "80vh", paddingTop: "8rem",  paddingBottom: "5rem"}}>
-        <div className="absolute top-0 left-0 right-0 h-10 bg-linear-to-t from-transparent to-white pointer-events-none"></div>
-        {/* <h2 className="text-3xl font-bold mb-6 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 text-center after:mx-auto">Mes prestations</h2>
-        <p className="text-lg md:text-xl text-center mb-12 text-gray-600 font-medium">Correction</p>
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <div className="bg-gray-100 shadow-md rounded-lg p-8 text-center hover:scale-105 transition-transform duration-300">
-            <img src="/plume.svg" alt="Icône plume" className="w-[50px] mx-auto mb-4" />
-            <h3 className="text-2xl font-semibold mb-3 text-gray-700">Correction</h3>
-            <h4 className="text-gray-700 font-medium mb-4">Pour les textes jamais corrigés</h4>
-            <p className="text-gray-700 mb-4">La correction consiste à vérifier l’orthographe, la grammaire, la ponctuation et la typographie, tout en proposant des ajustements mineurs pour clarifier le texte.</p>
-            <p className="text-gray-700 mb-4">Idéal pour les textes originaux qui n’ont encore jamais été relus par un correcteur.</p>
-            <p className="text-gray-700 font-bold text-lg">3 € / 1000 signes</p>
+      <section id="public"
+        className="relative justify-center items-center bg-white"
+        style={{ paddingTop: "5rem", paddingBottom: "5rem" }} >
+        <h2 className="text-3xl font-bold mb-10 text-[#B76E79] relative text-center
+          after:content-[''] after:block after:w-[130px] after:h-1 after:bg-[#B76E79] after:mt-3 after:mx-auto">
+          À qui s’adressent mes services ?</h2>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-6 text-center">
+          <div className="flex flex-col items-center">
+            <img
+                src="/auteur.svg"
+                alt="Icône auteur"
+                className="w-20 mx-auto mb-6 opacity-90"
+              />
+            <h3 className="text-xl font-semibold mb-3 text-gray-800">Auteurs</h3>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Correction professionnelle complète : orthographe, ponctuation, syntaxe, cohérence et style pour votre roman,
+              recueil, récit ou manuscrit en cours d’écriture.
+            </p>
           </div>
 
-          <div className="bg-gray-100 shadow-md rounded-lg p-8 text-center hover:scale-105 transition-transform duration-300">
-            <img src="/livre.svg" alt="Icône plume" className="w-[50px] mx-auto mb-4"/>
-            <h3 className="text-2xl font-semibold mb-3 text-gray-700">Relecture</h3>
-            <h4 className="text-gray-700 font-medium mb-4">Pour les textes déjà travaillés</h4>
-            <p className="text-gray-700 mb-4">La relecture permet de vérifier une deuxième fois l’orthographe, la ponctuation, la cohérence et la fluidité.</p>
-            <p className="text-gray-700 mb-4">C’est idéal pour un texte qui a déjà été corrigé et nécessite une dernière vérification avant publication.</p>
-            <p className="text-gray-700 font-bold text-lg">2 € / 1000 signes</p>
+          <div className="flex flex-col items-center">
+            <img
+                src="/personne.svg"
+                alt="Icône particuliers"
+                className="w-20 mx-auto mb-6 opacity-90"
+              />
+            <h3 className="text-xl font-semibold mb-3 text-gray-800">Particuliers</h3>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Relecture, correction, mise en page et reformulation de vos courriers, CV, lettres, dossiers VAE,
+              documents administratifs ou personnels.
+            </p>
           </div>
+
+          <div className="flex flex-col items-center">
+            <img
+                src="/pro.svg"
+                alt="Icône professionnels"
+                className="w-20 mx-auto mb-6 opacity-90"
+              />
+
+            <h3 className="text-xl font-semibold mb-3 text-gray-800">Professionnels</h3>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Correction, harmonisation, rewriting et perfectionnement de vos supports écrits : brochures, sites web, 
+              newsletters, rapports, communication interne ou commerciale.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img
+                src="/maison.svg"
+                alt="Icône maisons d'édition"
+                className="w-20 mx-auto mb-6 opacity-90"
+              />
+
+            <h3 className="text-xl font-semibold mb-3 text-gray-800">Maisons d’édition</h3>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Préparation de copie, correction typographique, orthographique et grammaticale, ainsi que réécriture
+              pour vos ouvrages à paraître ou vos collections.
+            </p>
+          </div>
+
         </div>
+      </section>
 
-        <div className="flex justify-center mt-12">
-          <a
-            href="/contact"
-            className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-gray-100 px-6 font-medium text-gray-800 duration-500 cursor-pointer">
-            <div className="translate-x-0 opacity-100 transition-all group-hover:-translate-x-[150%] group-hover:opacity-0">
-              Me contacter
+      <section id="prestations" className="relative justify-center items-center" style={{ backgroundImage: "url('/image-carnet-2.jpg')", backgroundPosition: "center", 
+        backgroundSize: "cover", minHeight: "80vh", paddingTop: "7rem",  paddingBottom: "5rem"}}>
+        <div className="absolute top-0 left-0 right-0 h-10 bg-linear-to-t from-transparent to-white pointer-events-none"></div>
+          <h2 className="text-3xl font-bold mb-12 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 text-center after:mx-auto">
+            Mes prestations
+          </h2>
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+            <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/plume.svg"
+                alt="Correction"
+                className="w-20 mx-auto mb-6 opacity-90"
+              />
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Correction et réécriture
+              </h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Une correction complète incluant orthographe, grammaire, syntaxe,
+                ponctuation, mais aussi reformulation lorsque cela est nécessaire afin
+                d’assurer un texte fluide, clair et professionnel.
+              </p>
+              <button className="mt-4 px-6 py-3 bg-[#B76E79] text-white rounded-md hover:bg-[#a4626c] transition-colors duration-300">
+                En savoir plus
+              </button>
             </div>
 
-            <div className="absolute translate-x-[150%] opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100">
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 15 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-gray-800">
-                <path
-                  d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-                  fill="currentColor"
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
+            <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/plume.svg"
+                alt="Correction"
+                className="w-20 mx-auto mb-6 opacity-90"
+              />
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Correction et réécriture
+              </h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Une correction complète incluant orthographe, grammaire, syntaxe,
+                ponctuation, mais aussi reformulation lorsque cela est nécessaire afin
+                d’assurer un texte fluide, clair et professionnel.
+              </p>
+              <button className="mt-4 px-6 py-3 bg-[#B76E79] text-white rounded-md hover:bg-[#a4626c] transition-colors duration-300">
+                En savoir plus
+              </button>
             </div>
-          </a>
-        </div> */}
+
+            <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="/plume.svg"
+                alt="Correction"
+                className="w-20 mx-auto mb-6 opacity-90"
+              />
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Correction et réécriture
+              </h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Une correction complète incluant orthographe, grammaire, syntaxe,
+                ponctuation, mais aussi reformulation lorsque cela est nécessaire afin
+                d’assurer un texte fluide, clair et professionnel.
+              </p>
+              <button className="mt-4 px-6 py-3 bg-[#B76E79] text-white rounded-md hover:bg-[#a4626c] transition-colors duration-300">
+                En savoir plus
+              </button>
+            </div>
+
+          </div>
       </section>
     </div>
   );
