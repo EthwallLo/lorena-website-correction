@@ -66,7 +66,7 @@ export default function ContactPage() {
               <div>
                 <input
                   type='email'
-                  placeholder='E-mail'
+                  placeholder='Email'
                   className="w-full bg-gray-100 py-2.5 px-4 text-sm rounded-md border border-gray-200 
                            focus:bg-transparent focus:border-gray-800 outline-none transition-all"
                 />

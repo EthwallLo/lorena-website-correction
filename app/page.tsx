@@ -14,10 +14,10 @@ export default function HomePage() {
           <p className="text-lg md:text-xl max-w-2xl mx-auto mb-2 text-gray-600 font-medium">Lorena Guedouani - Correction et relecture professionnelle</p>
           <p className="text-md md:text-lg max-w-2xl mx-auto text-gray-600">Je vous accompagne dans la correction de vos écrits.</p>
           <a
-            href="#a-propos"
+            href="#decouvrir"
             onClick={(e) => {
               e.preventDefault();
-              const section = document.getElementById("a-propos");
+              const section = document.getElementById("decouvrir");
               if (section) {
                 const yOffset = -70;
                 const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
@@ -28,7 +28,7 @@ export default function HomePage() {
           <button
             onClick={(e) => {
               e.preventDefault();
-              const section = document.getElementById("a-propos");
+              const section = document.getElementById("decouvrir");
               if (section) {
                 const yOffset = -70;
                 const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
@@ -36,7 +36,7 @@ export default function HomePage() {
               }
             }}
             className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-gray-200 px-6 font-medium text-gray-800 transition hover:scale-105 mt-6 cursor-pointer">
-            <span>Me découvrir ↓</span>
+            <span>Découvrir ↓</span>
             <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
               <div className="relative h-full w-8 bg-gray-300/50"></div>
             </div>
@@ -44,6 +44,17 @@ export default function HomePage() {
           </a>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-10 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
+      </section>
+
+      <section id="decouvrir" className="relative justify-center items-center bg-white" style={{ minHeight: "40vh", paddingTop: "7rem",  paddingBottom: "5rem"}}>
+        <h2 className="text-3xl font-bold mb-6 text-[#B76E79] relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-[#B76E79] after:mt-3 text-center after:mx-auto">
+          Pourquoi faire appel à une correcrice-relectrice ?</h2>
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row text-center items-center gap-16 px-6">
+            <p className="text-gray-700 mb-6">Faire appel à un correcteur relecteur permet de garantir la qualité, la clarté et la crédibilité de vos écrits en éliminant les fautes d'orthographe, 
+              de grammaire, de syntaxe et de ponctuation</p>
+            <p className="text-gray-700 mb-6">Faire appel à un correcteur relecteur permet de garantir la qualité, la clarté et la crédibilité de vos écrits en éliminant les fautes d'orthographe, 
+              de grammaire, de syntaxe et de ponctuation</p>
+          </div>
       </section>
 
       <section id="a-propos" className="relative bg-gray-100" style={{ backgroundImage: "url('/image-bureau.jpg')", backgroundSize: "cover", backgroundPosition: "center", minHeight: "90vh", paddingTop: "11rem"}}>
@@ -72,7 +83,7 @@ export default function HomePage() {
       <section id="prestations" className="relative justify-center items-center" style={{ backgroundImage: "url('/image-carnet-2.jpg')", backgroundPosition: "center", 
         backgroundSize: "cover", minHeight: "80vh", paddingTop: "8rem",  paddingBottom: "5rem"}}>
         <div className="absolute top-0 left-0 right-0 h-10 bg-linear-to-t from-transparent to-white pointer-events-none"></div>
-        <h2 className="text-3xl font-bold mb-6 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 text-center after:mx-auto">Mes prestations</h2>
+        {/* <h2 className="text-3xl font-bold mb-6 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 text-center after:mx-auto">Mes prestations</h2>
         <p className="text-lg md:text-xl text-center mb-12 text-gray-600 font-medium">Correction</p>
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="bg-gray-100 shadow-md rounded-lg p-8 text-center hover:scale-105 transition-transform duration-300">
@@ -119,7 +130,7 @@ export default function HomePage() {
               </svg>
             </div>
           </a>
-        </div>
+        </div> */}
       </section>
     </div>
   );

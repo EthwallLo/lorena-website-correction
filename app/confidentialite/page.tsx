@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
               <p>Votre vie privée est importante pour moi. Cette politique de confidentialité explique comment je collecte, utilise et protège vos informations lorsque vous utilisez mon site web.</p>
 
               <h2 className="text-2xl font-bold text-gray-800">1. Collecte des informations</h2>
-              <p>Je peux collecter des informations personnelles lorsque vous me contactez via le formulaire, comme votre nom, votre e-mail, votre numéro de téléphone et le contenu de votre message. Ces informations sont utilisées uniquement pour répondre à vos demandes.</p>
+              <p>Je peux collecter des informations personnelles lorsque vous me contactez via le formulaire, comme votre nom, votre email, votre numéro de téléphone et le contenu de votre message. Ces informations sont utilisées uniquement pour répondre à vos demandes.</p>
 
               <h2 className="text-2xl font-bold text-gray-800">2. Utilisation des informations</h2>
               <p>Les informations que vous me fournissez ne seront utilisées que pour traiter vos demandes et améliorer votre expérience. Elles ne seront jamais partagées avec des tiers sans votre consentement.</p>

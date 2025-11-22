@@ -8,13 +8,13 @@ export default function Footer() {
         </div>
 
         <div className="text-[#333333] flex flex-col items-start whitespace-nowrap">
-          <h4 className="font-semibold mb-2 text-gray-800">Contact</h4>
+          <h4 className="font-semibold mb-2 text-[#B76E79]">Contact</h4>
           <p>Téléphone : <a href="tel:+33769358103" className="hover:underline">+33 7 69 35 81 03</a></p>
           <p>Email : <a href="mailto:lorena.correction@gmail.com" className="hover:underline">lorena.correction@gmail.com</a></p>
         </div>
 
         <div className="text-[#333333] flex flex-col items-start whitespace-nowrap">
-          <h4 className="font-semibold mb-2 text-gray-800">Informations</h4>
+          <h4 className="font-semibold mb-2 text-[#B76E79]">Informations</h4>
           <ul>
             <li><a href="/confidentialite" className="hover:underline">Politique de confidentialité</a></li>
             <li><a href="/mentions-legales" className="hover:underline">Mentions légales</a></li>

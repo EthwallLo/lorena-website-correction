@@ -1,6 +1,6 @@
 "use client";
 
-export default function AProposPage() {
+export default function QuiSuisJePage() {
   return (
     <div className="w-full min-h-screen flex flex-col">
       <section
