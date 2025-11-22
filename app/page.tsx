@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <div>
 
-      {/* Ajouter packs + section accessibilité + infos à comprendre tarifs*/}
+      {/* Ajouter packs + section accessibilité + infos à comprendre tarifs + correction après traduction*/}
 
       <section className="w-full relative h-screen flex justify-center items-center" style={{ backgroundImage: "url('/image-carnet.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="absolute inset-0 bg-black/10"></div> 
@@ -43,7 +43,6 @@ export default function HomePage() {
           </button>
           </a>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-10 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
       </section>
 
       <section id="decouvrir" className="relative justify-center items-center bg-white"
@@ -80,7 +79,6 @@ export default function HomePage() {
       </section>
 
       <section id="a-propos" className="relative bg-gray-100" style={{ backgroundImage: "url('/image-bureau.jpg')", backgroundSize: "cover", backgroundPosition: "center", minHeight: "90vh", paddingTop: "11rem"}}>
-        <div className="absolute top-0 left-0 right-0 h-10 bg-linear-to-t from-transparent to-white pointer-events-none"></div>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 px-6">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3">À propos de moi</h2>
@@ -99,7 +97,6 @@ export default function HomePage() {
             <img src="/cadre-lorena.png" alt="Lorena" className="w-[500px]"/>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-10 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
       </section>
 
       <section id="public"
@@ -167,8 +164,7 @@ export default function HomePage() {
       </section>
 
       <section id="prestations" className="relative justify-center items-center" style={{ backgroundImage: "url('/image-carnet-2.jpg')", backgroundPosition: "center", 
-        backgroundSize: "cover", minHeight: "80vh", paddingTop: "7rem",  paddingBottom: "5rem"}}>
-        <div className="absolute top-0 left-0 right-0 h-10 bg-linear-to-t from-transparent to-white pointer-events-none"></div>
+        backgroundSize: "cover", minHeight: "70vh", paddingTop: "8rem",  paddingBottom: "5rem"}}>
           <h2 className="text-3xl font-bold mb-12 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 text-center after:mx-auto">
             Mes prestations
           </h2>
@@ -194,12 +190,12 @@ export default function HomePage() {
 
             <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <img
-                src="/plume.svg"
+                src="/redaction.svg"
                 alt="Correction"
                 className="w-20 mx-auto mb-6 opacity-90"
               />
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Correction et réécriture
+                Rédaction
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Une correction complète incluant orthographe, grammaire, syntaxe,
