@@ -7,24 +7,13 @@ export default function HomePage() {
 
       {/* Ajouter packs + section accessibilité + infos à comprendre tarifs + correction après traduction - relire sites web*/}
 
-      <section className="w-full relative h-screen flex justify-center items-center" style={{ backgroundImage: "url('/image-carnet.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="w-full relative h-screen flex justify-center items-center bg-cover bg-center" 
+        style={{ backgroundImage: "url('/image-carnet.jpg')" }}>
         <div className="absolute inset-0 bg-black/10"></div> 
-        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
-          <Typewriter/><p className="font-cutive "></p>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto mb-2 text-gray-600 font-medium">Lorena Guedouani - Correction et relecture professionnelle</p>
+        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6 md:px-12">
+          <Typewriter />
+          <p className="md:text-xl text-base leading-relaxed max-w-2xl mx-auto mb-2 text-gray-600 font-medium">Lorena Guedouani - Correction et relecture professionnelle</p>
           <p className="text-md md:text-lg max-w-2xl mx-auto text-gray-600">Je vous accompagne dans la correction de vos écrits.</p>
-          <a
-            href="#decouvrir"
-            onClick={(e) => {
-              e.preventDefault();
-              const section = document.getElementById("decouvrir");
-              if (section) {
-                const yOffset = -70;
-                const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                window.scrollTo({ top: y, behavior: "smooth" });
-              }
-            }}
-            className="relative inline-block text-lg group cursor-pointer mt-6">
           <button
             onClick={(e) => {
               e.preventDefault();
@@ -35,15 +24,12 @@ export default function HomePage() {
                 window.scrollTo({ top: y, behavior: "smooth" });
               }
             }}
-            className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-gray-100 px-6 font-medium text-gray-800 transition hover:scale-105 mt-6 cursor-pointer">
-            <span>Découvrir ↓</span>
-            <div className="absolute inset-0 flex h-full w-full justify-center transform-[skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:transform-[skew(-12deg)_translateX(100%)]">
-              <div className="relative h-full w-8 bg-gray-300/50"></div>
-            </div>
+            className="mt-6 px-6 py-3 bg-gray-100 text-gray-800 rounded-md font-medium hover:scale-105 transition transform">
+            Découvrir ↓
           </button>
-          </a>
         </div>
       </section>
+
 
       <section id="decouvrir" className="relative justify-center items-center bg-white"
         style={{ minHeight: "40vh", paddingTop: "5rem", paddingBottom: "5rem" }}>
@@ -51,7 +37,7 @@ export default function HomePage() {
           after:content-[''] after:block after:w-[130px] after:h-1 after:bg-[#B76E79] after:mt-3 after:mx-auto">
           Pourquoi faire appel à une correctrice-relectrice ? </h2>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 px-6 text-center md:text-left">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:px-12 px-6 text-center md:text-left">
           <div>
             <p className="text-center text-gray-700 mb-6 leading-relaxed">
               Même lorsqu’on maîtrise parfaitement la langue, il est extrêmement difficile de repérer ses propres erreurs : notre cerveau anticipe ce que l’on 
@@ -79,7 +65,7 @@ export default function HomePage() {
       </section>
 
       <section id="a-propos" className="relative bg-gray-100" style={{ backgroundImage: "url('/image-bureau.jpg')", backgroundSize: "cover", backgroundPosition: "center", minHeight: "90vh", paddingTop: "11rem"}}>
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 px-6">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:px-12 px-6">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3">À propos de moi</h2>
             <p className="text-gray-700 mb-6">Je m'appelle Lorena et je suis passionnée de linguistique. </p>
@@ -94,7 +80,7 @@ export default function HomePage() {
           </div>
 
           <div className="md:w-1/2 flex justify-center">
-            <img src="/cadre-lorena.png" alt="Lorena" className="w-[500px]"/>
+            <img src="/cadre-lorena.png" alt="Lorena" className="w-full max-w-sm md:w-[500px] rounded-lg mx-auto"/>
           </div>
         </div>
       </section>
@@ -105,7 +91,7 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold mb-10 text-[#B76E79] relative text-center
           after:content-[''] after:block after:w-[130px] after:h-1 after:bg-[#B76E79] after:mt-3 after:mx-auto">
           À qui s’adressent mes services ?</h2>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 px-6 text-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6 md:px-12 text-center">
           <div className="flex flex-col items-center">
             <img
                 src="/auteur.svg"
@@ -168,7 +154,7 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold mb-12 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 text-center after:mx-auto">
             Mes prestations
           </h2>
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-12">
             <div className="md:col-start-2 bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
           {/* <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
             <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300"> */}
