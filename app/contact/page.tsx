@@ -1,6 +1,6 @@
 "use client";
 
-const handleSubmit = async (e) => {
+const handleSubmit = async (e: { preventDefault: () => void; target: { value: any; }[]; }) => {
   e.preventDefault();
 
   const formData = {
