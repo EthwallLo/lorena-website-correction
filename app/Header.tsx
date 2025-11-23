@@ -27,7 +27,7 @@ export default function Header() {
 
         <div className="flex space-x-8 text-gray-800 text-lg">
           <NavLink href="/">Accueil</NavLink>
-          <NavLink href="/prestations">Prestations</NavLink>
+          <NavLink href="/correction">Correction</NavLink>
           <NavLink href="/qui-suis-je">Qui suis-je</NavLink>
           <NavLink href="/contact">Contact</NavLink>
         </div>

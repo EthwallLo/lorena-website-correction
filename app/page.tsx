@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <div>
 
-      {/* Ajouter packs + section accessibilité + infos à comprendre tarifs + correction après traduction*/}
+      {/* Ajouter packs + section accessibilité + infos à comprendre tarifs + correction après traduction - relire sites web*/}
 
       <section className="w-full relative h-screen flex justify-center items-center" style={{ backgroundImage: "url('/image-carnet.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="absolute inset-0 bg-black/10"></div> 
@@ -35,9 +35,9 @@ export default function HomePage() {
                 window.scrollTo({ top: y, behavior: "smooth" });
               }
             }}
-            className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-gray-200 px-6 font-medium text-gray-800 transition hover:scale-105 mt-6 cursor-pointer">
+            className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-gray-100 px-6 font-medium text-gray-800 transition hover:scale-105 mt-6 cursor-pointer">
             <span>Découvrir ↓</span>
-            <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+            <div className="absolute inset-0 flex h-full w-full justify-center transform-[skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:transform-[skew(-12deg)_translateX(100%)]">
               <div className="relative h-full w-8 bg-gray-300/50"></div>
             </div>
           </button>
@@ -86,7 +86,7 @@ export default function HomePage() {
             <p className="text-gray-700 mb-6">Je souhaite aujourd'hui accompagner les particuliers et professionnels dans la correction et la relecture  de leurs documents pour leur permettre de communiquer de manière claire, précise et élégante. </p>
             <p className="text-gray-700 mb-6">Mon objectif est de faire ressortir le meilleur de vos textes tout en respectant votre style et votre voix.</p>
             <button
-              onClick={() => window.location.href = '/a-propos'}
+              onClick={() => window.location.href = '/qui-suis-je'}
               className="relative h-12 overflow-hidden rounded bg-gray-100 px-5 py-2.5 text-gray-800 font-medium transition-all 
               duration-300 hover:bg-gray-150 hover:ring-2 hover:ring-gray-300 hover:ring-offset-2 cursor-pointer">
               <span className="relative">Découvrir mon parcours</span>
@@ -169,26 +169,29 @@ export default function HomePage() {
             Mes prestations
           </h2>
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
-            <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
+            <div className="md:col-start-2 bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
+          {/* <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+            <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300"> */}
               <img
                 src="/plume.svg"
                 alt="Correction"
                 className="w-20 mx-auto mb-6 opacity-90"
               />
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Correction et réécriture
+                Correction et relecture
               </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Une correction complète incluant orthographe, grammaire, syntaxe,
                 ponctuation, mais aussi reformulation lorsque cela est nécessaire afin
                 d’assurer un texte fluide, clair et professionnel.
               </p>
-              <button className="mt-4 px-6 py-3 bg-[#B76E79] text-white rounded-md hover:bg-[#a4626c] transition-colors duration-300">
+              <button onClick={() => window.location.href = '/correction'}
+                className="mt-4 px-6 py-3 bg-[#B76E79] text-white rounded-md hover:bg-[#a4626c] transition-colors duration-300">
                 En savoir plus
               </button>
             </div>
 
-            <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
+            {/* <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
               <img
                 src="/redaction.svg"
                 alt="Correction"
@@ -224,7 +227,7 @@ export default function HomePage() {
               <button className="mt-4 px-6 py-3 bg-[#B76E79] text-white rounded-md hover:bg-[#a4626c] transition-colors duration-300">
                 En savoir plus
               </button>
-            </div>
+            </div> */}
 
           </div>
       </section>

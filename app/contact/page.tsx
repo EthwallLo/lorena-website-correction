@@ -36,7 +36,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-black/10"></div>
 
         <div className="relative z-10 text-center px-6 flex flex-col items-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800">Contact</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-800 after:mt-3 after:mx-auto">Contact</h1>
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
