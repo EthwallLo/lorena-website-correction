@@ -1,5 +1,5 @@
 "use client";
-import Typewriter from "./typewriter";
+import Typewriter from "./components/typewriter";
 
 export default function HomePage() {
   return (

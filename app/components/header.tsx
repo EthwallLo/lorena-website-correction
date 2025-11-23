@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import NavLink from "../navlink";
+import NavLink from "./navlink";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
