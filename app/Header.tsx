@@ -22,7 +22,7 @@ export default function Header() {
     >
       <nav className="max-w-7xl mx-auto flex justify-between items-center px-4">
         <Link href="/">
-          <Image src="/logo.svg" alt="Logo" width={160} height={100} />
+          <Image src="/logo-moderne.svg" alt="Logo" width={160} height={100} />
         </Link>
 
         <div className="flex space-x-8 text-gray-800 text-lg">

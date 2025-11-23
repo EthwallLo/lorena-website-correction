@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex justify-between items-start px-6 md:px-12 gap-40">
 
         <div className="flex flex-col items-start">
-          <img src="/logo.svg" alt="Lorena - Au mot juste" className="h-24 w-auto" /> 
+          <img src="/logo-moderne.svg" alt="Lorena - Au mot juste" className="h-24 w-auto" /> 
         </div>
 
         <div className="text-[#333333] flex flex-col items-start whitespace-nowrap">
