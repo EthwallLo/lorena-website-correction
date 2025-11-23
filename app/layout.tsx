@@ -1,5 +1,5 @@
 import "./globals.css";
-import Header from "./header";
+import Header from "./components/header";
 import Footer from "./footer"; 
 import { Montserrat } from "next/font/google";
 
