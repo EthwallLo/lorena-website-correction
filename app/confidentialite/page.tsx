@@ -12,6 +12,9 @@ export default function PrivacyPolicyPage() {
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
+        <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200/50 text-gray-700 text-[10px] italic px-1 py-0.5 rounded rotate-90 origin-left">
+          Photo : Jess Bailey / Unsplash
+        </div>
       </section>
 
       <section className="w-full bg-white py-20">

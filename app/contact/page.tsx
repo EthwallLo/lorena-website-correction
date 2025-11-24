@@ -60,6 +60,9 @@ export default function ContactPage() {
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
+        <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200/50 text-gray-700 text-[10px] italic px-1 py-0.5 rounded rotate-90 origin-left">
+          Photo : Jess Bailey / Unsplash
+        </div>
       </section>
 
       <section className="w-full bg-white py-20">
@@ -68,7 +71,8 @@ export default function ContactPage() {
           <div className="bg-white [box-shadow:0_2px_14px_-3px_rgba(14,14,14,0.3)] rounded-2xl p-6 sm:p-10">
             
             <div className="text-center sm:text-left">
-              <h2 className="text-3xl font-bold text-center mb-12 text-gray-600">Me contacter</h2>
+              {/* <h2 className="text- font-bold  mb-12 text-gray-00"></h2> */}
+              <h2 className="text-3xl md:text-5xl text-center font-bold text-[#B76E79] after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-800 after:mt-3 after:mx-auto">Me contacter</h2>
               <p className="text-[15px] text-center text-gray-700 leading-relaxed">Une question, un projet, un besoin de correction ?</p>
               <p className="text-[15px] text-center text-gray-700 leading-relaxed">Je serai ravie d’échanger avec vous.</p>
             </div>

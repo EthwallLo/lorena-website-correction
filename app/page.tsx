@@ -37,6 +37,9 @@ export default function HomePage() {
             Découvrir ↓
           </button>
         </div>
+        <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200/50 text-gray-700 text-[10px] italic px-1 py-0.5 rounded rotate-90 origin-left">
+          Photo : Jess Bailey / Unsplash
+        </div>
       </section>
 
 
@@ -91,6 +94,9 @@ export default function HomePage() {
           <div className="md:w-1/2 flex justify-center">
             <img src="/cadre-lorena.png" alt="Lorena" className="w-full max-w-sm md:w-[500px] rounded-lg mx-auto"/>
           </div>
+        </div>
+        <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200/50 text-gray-700 text-[10px] italic px-1 py-0.5 rounded rotate-90 origin-left">
+          Photo : Andrej Lišakov / Unsplash
         </div>
       </section>
 
@@ -224,6 +230,9 @@ export default function HomePage() {
               </button>
             </div> */}
 
+          </div>
+          <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200/50 text-gray-700 text-[10px] italic px-1 py-0.5 rounded rotate-90 origin-left">
+            Photo : Jess Bailey / Unsplash
           </div>
       </section>
     </div>

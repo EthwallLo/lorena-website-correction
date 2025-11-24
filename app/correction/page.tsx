@@ -8,6 +8,9 @@ export default function CorrectionPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-600 after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 after:mx-auto">La correction</h1>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
+        <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200/50 text-gray-700 text-[10px] italic px-1 py-0.5 rounded rotate-90 origin-left">
+          Photo : Jess Bailey / Unsplash
+        </div>
       </section>
 
       <section id="corps" className="relative justify-center items-center bg-white">
@@ -89,6 +92,9 @@ export default function CorrectionPage() {
               </a>
             </div>
         </section>
+        <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200/50 text-gray-700 text-[10px] italic px-1 py-0.5 rounded rotate-90 origin-left">
+          Photo : Susan Q Yin / Unsplash
+        </div>
       </section>
     </div>
   );

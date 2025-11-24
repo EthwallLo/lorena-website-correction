@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function QuiSuisJePage() {
   const [activeTab, setActiveTab] = useState<"formations" | "experiences" | "diplomes">("formations");
@@ -13,6 +14,9 @@ export default function QuiSuisJePage() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-800 after:mt-3 after:mx-auto">Qui suis-je ?</h1>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
+        <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200/50 text-gray-700 text-[10px] italic px-1 py-0.5 rounded rotate-90 origin-left">
+          Photo : Minh Pham / Unsplash
+        </div>
       </section>
 
       <section id="a-propos" className="relative bg-white min-h-screen" style={{ minHeight: "50vh", paddingTop: "10rem"}}>
@@ -326,7 +330,6 @@ export default function QuiSuisJePage() {
                 </div>
               </div>
             )}
-
             {activeTab === "diplomes" && (
               <div className="space-y-16">
                 <div className="flex gap-8 items-start relative">
@@ -451,7 +454,6 @@ export default function QuiSuisJePage() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }
