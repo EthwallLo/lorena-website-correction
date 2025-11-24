@@ -7,7 +7,7 @@ export default function HomePage() {
 
       {/* Ajouter packs + section accessibilité + infos à comprendre tarifs + correction après traduction - relire sites web*/}
 
-      <section className="w-full relative min-h-[80vh] md:min-h-screen flex justify-center items-center bg-cover bg-center" 
+      <section className="w-full relative min-h-screen md:min-h-screen flex justify-center items-center bg-cover bg-center" 
         style={{ backgroundImage: "url('/image-carnet.jpg')" }}>
         <div className="absolute inset-0 bg-black/10"></div> 
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6 md:px-12">
