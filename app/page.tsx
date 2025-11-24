@@ -18,13 +18,22 @@ export default function HomePage() {
             onClick={(e) => {
               e.preventDefault();
               const section = document.getElementById("decouvrir");
+
               if (section) {
-                const yOffset = -70;
-                const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                window.scrollTo({ top: y, behavior: "smooth" });
+                const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+                const sectionHeight = section.offsetHeight;
+                const windowHeight = window.innerHeight;
+
+                const scrollTo = sectionTop - (windowHeight / 2) + (sectionHeight / 2);
+
+                window.scrollTo({
+                  top: scrollTo,
+                  behavior: "smooth",
+                });
               }
             }}
-            className="mt-6 px-6 py-3 bg-gray-100 text-gray-800 rounded-md font-medium hover:scale-105 transition transform">
+            className="mt-6 px-6 py-3 bg-gray-100 text-gray-800 rounded-md font-medium hover:scale-105 transition transform"
+          >
             Découvrir ↓
           </button>
         </div>
