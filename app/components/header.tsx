@@ -42,7 +42,7 @@ export default function Header() {
       </nav>
 
       {open && (
-        <div className="md:hidden bg-white shadow-md p-6 flex flex-col space-y-4 text-lg">
+        <div className="md:hidden bg-white text-gray-800 shadow-md p-6 flex flex-col space-y-4 text-lg">
           <NavLink href="/" onClick={() => setOpen(false)}>Accueil</NavLink>
           <NavLink href="/correction" onClick={() => setOpen(false)}>Correction</NavLink>
           <NavLink href="/qui-suis-je" onClick={() => setOpen(false)}>Qui suis-je</NavLink>
