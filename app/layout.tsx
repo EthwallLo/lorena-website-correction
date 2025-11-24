@@ -9,13 +9,17 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Lorena - Au mot juste",
+  title: "Au mot juste -",
   description: "Correction, relecture et réécriture professionnelle.",
+  icon: "/icon.png",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="icon" href="/icon.png"/>
+      </head>
       <body className={`${montserrat.className} bg-white text-gray-900`}>
         <Header />
 

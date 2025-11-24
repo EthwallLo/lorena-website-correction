@@ -31,12 +31,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-6xl mx-auto text-center text-sm text-gray-500 mt-8 px-4 leading-relaxed">
-        © {new Date().getFullYear()} Lorena - Au mot juste  
-        <br className="md:hidden" />
-        Tous droits réservés  
-        <br className="md:hidden" />
-        Fait avec ♥ par Lorena Guedouani
-      </div>
+        © {new Date().getFullYear()} Lorena - Au mot juste  |  <br className="md:hidden" />Tous droits réservés  |  <br className="md:hidden" /> Fait avec ♥ par Lorena Guedouani</div>
     </footer>
   );
 }
