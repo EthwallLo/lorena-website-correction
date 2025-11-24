@@ -1,30 +1,50 @@
 "use client";
 
-// const handleSubmit = async (e) => {
-//   e.preventDefault();
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-//   const formData = {
-//     name: e.target[0].value,
-//     email: e.target[1].value,
-//     phone: e.target[2].value,
-//     subject: e.target[3].value,
-//     message: e.target[4].value,
-//   };
+  const form = e.currentTarget;
+  const name = (form[0] as HTMLInputElement).value.trim();
+  const email = (form[1] as HTMLInputElement).value.trim();
+  const phone = (form[2] as HTMLInputElement).value.trim();
+  const subject = (form[3] as HTMLInputElement).value.trim();
+  const message = (form[4] as HTMLTextAreaElement).value.trim();
 
-//   try {
-//     const res = await fetch("/api/contact", {
-//       method: "POST",
-//       headers: { "Content-Type": "application/json" },
-//       body: JSON.stringify(formData),
-//     });
+  if (!email) {
+    alert("Le champ email est obligatoire.");
+    return;
+  }
+  if (!message) {
+    alert("Le champ message est obligatoire.");
+    return;
+  }
 
-//     const data = await res.json();
-//     alert(data.message);
-//     e.target.reset();
-//   } catch (err) {
-//     alert("Erreur lors de l'envoi du formulaire.");
-//   }
-// };
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Veuillez entrer un email valide.");
+    return;
+  }
+
+  if (phone && !/^\+?\d{10,15}$/.test(phone)) {
+    alert("Veuillez entrer un numéro de téléphone valide (10 à 15 chiffres).");
+    return;
+  }
+
+  const formData = { name, email, phone, subject, message };
+   try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+    alert(data.message);
+    form.reset();
+  } catch (err) {
+    alert("Erreur lors de l'envoi du formulaire.");
+  }
+};
 
 export default function ContactPage() {
   return (
@@ -52,7 +72,7 @@ export default function ContactPage() {
               <p className="text-[15px] text-center text-gray-700 leading-relaxed">Une question, un projet, un besoin de correction ?</p>
               <p className="text-[15px] text-center text-gray-700 leading-relaxed">Je serai ravie d’échanger avec vous.</p>
             </div>
-            {/* <form onSubmit={handleSubmit} className="grid sm:grid-cols-2 gap-4 text-gray-900 mt-8">
+            <form onSubmit={handleSubmit} className="grid sm:grid-cols-2 gap-4 text-gray-900 mt-8">
 
               <div>
                 <input
@@ -93,7 +113,7 @@ export default function ContactPage() {
               <div className="col-span-full">
                 <textarea
                   placeholder='Message'
-                  rows="6"
+                  rows={6}
                   className="w-full bg-gray-100 px-4 text-sm rounded-md pt-3 border border-gray-200 
                            focus:bg-transparent focus:border-gray-800 outline-none transition-all"
                 ></textarea>
@@ -108,7 +128,7 @@ export default function ContactPage() {
                   Envoyer le message
                 </button>
               </div>
-            </form> */}
+            </form>
           </div>
         </div>
       </section>
