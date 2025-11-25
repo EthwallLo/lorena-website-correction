@@ -61,17 +61,6 @@ export default function CorrectionPage() {
           <section className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 mb-24" 
           >
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition text-center">
-              <h2 className="text-2xl font-bold mb-4 text-[#B76E79]">Correction approfondie</h2>
-              <p className="leading-relaxed text-gray-600">
-                Une correction complète avec vérification des informations, harmonisation et homogénéisation du style.  
-              </p>
-
-              <p className="mt-4 font-semibold text-gray-700">
-                <span className="text-[#B76E79] font-bold">3 €</span> / 1000 signes
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition text-center">
               <h2 className="text-2xl font-bold mb-4 text-[#B76E79]">Correction simple</h2>
               <p className="leading-relaxed text-gray-600">
                 Une dernière relecture pour un texte déjà corrigé, afin d’éliminer les 
@@ -79,7 +68,17 @@ export default function CorrectionPage() {
               </p>
 
               <p className="mt-4 font-semibold text-gray-700">
-                <span className="text-[#B76E79] font-bold">2 €</span> / 1000 signes
+                <span className="text-[#B76E79] font-bold">3 €</span> / 1000 signes
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition text-center">
+              <h2 className="text-2xl font-bold mb-4 text-[#B76E79]">Correction approfondie</h2>
+              <p className="leading-relaxed text-gray-600">
+                Une correction complète avec vérification des informations, harmonisation et homogénéisation du style.  
+              </p>
+
+              <p className="mt-4 font-semibold text-gray-700">
+                <span className="text-[#B76E79] font-bold">4 €</span> / 1000 signes
               </p>
             </div>
             </section>
