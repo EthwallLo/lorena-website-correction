@@ -61,6 +61,14 @@ export default function Header() {
           <NavLink href="/correction" onClick={() => setOpen(false)}>Correction</NavLink>
           <NavLink href="/qui-suis-je" onClick={() => setOpen(false)}>Qui suis-je</NavLink>
           <NavLink href="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
+
+          <Link
+            href="https://www.linkedin.com/in/lorena-guedouani/"
+            target="_blank"
+            className="pt-4"
+          >
+            <Image src="/linkedin.svg" width={30} height={30} alt="LinkedIn" />
+          </Link>
         </div>
       )}
     </header>
