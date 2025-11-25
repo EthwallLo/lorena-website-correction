@@ -76,7 +76,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="a-propos" className="relative bg-gray-100" style={{ backgroundImage: "url('/image-bureau.jpg')", backgroundSize: "cover", backgroundPosition: "center", minHeight: "90vh", paddingTop: "11rem"}}>
+      <section id="a-propos" className="relative bg-gray-100" style={{ backgroundImage: "url('/image-bureau.jpg')", backgroundSize: "cover", backgroundPosition: "center", minHeight: "80vh", paddingTop: "11rem"}}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:px-12 px-6">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3">À propos de moi</h2>

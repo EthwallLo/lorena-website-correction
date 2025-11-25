@@ -21,7 +21,7 @@ export default function Header() {
         (scrolled ? "bg-white shadow-sm" : "bg-transparent")
       }
     >
-      <nav className="max-w-7xl mx-auto flex justify-between items-center px-4">
+      <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 relative">
         <Link href="/">
           <Image src="/logo-moderne.svg" alt="Logo" width={140} height={80} />
         </Link>
@@ -40,6 +40,20 @@ export default function Header() {
           {open ? "✕" : "☰"}
         </button>
       </nav>
+
+      <Link
+        href="https://www.linkedin.com/in/lorena-guedouani/"
+        target="_blank"
+        className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2"
+      >
+        <Image
+          src="/linkedin.svg"
+          alt="LinkedIn"
+          width={28}
+          height={28}
+          className="hover:opacity-70 transition"
+        />
+      </Link>
 
       {open && (
         <div className="md:hidden bg-white text-gray-800 shadow-md p-6 flex flex-col space-y-4 text-lg">
