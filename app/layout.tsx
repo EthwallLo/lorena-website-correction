@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Au mot juste -",
+  title: "Au mot juste - Correction, relecture et réécriture professionnelle.",
   description: "Correction, relecture et réécriture professionnelle.",
   icon: "/icon.png",
 };
