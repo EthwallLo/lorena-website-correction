@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Typewriter() {
   const text = "Au mot juste";
@@ -7,18 +7,18 @@ export default function Typewriter() {
   useEffect(() => {
     let i = 0;
     const interval = setInterval(() => {
-      setCurrentText(text.slice(0, i));
+      setCurrentText(text.slice(0, i + 1));
       i++;
-      if (i > text.length) clearInterval(interval);
-    }, 180); 
+      if (i === text.length) clearInterval(interval);
+    }, 180);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <h1 className="font-cutive text-4xl md:text-5xl font-bold mb-2 text-gray-800
-        whitespace-nowrap border-r-4 border-gray-800 animate-typing animate-cursor">
+    <h1 className="font-cutive text-4xl md:text-5xl font-bold mb-2 text-gray-800 whitespace-nowrap">
       {currentText}
+      <span className="ml-0.5 animate-blink">|</span>
     </h1>
   );
 }
