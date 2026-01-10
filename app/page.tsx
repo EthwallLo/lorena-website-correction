@@ -45,9 +45,10 @@ export default function HomePage() {
 
       <section id="decouvrir" className="relative justify-center items-center bg-white"
         style={{ minHeight: "40vh", paddingTop: "5rem", paddingBottom: "5rem" }}>
-        <h2 className="text-3xl font-bold mb-10 text-[#B76E79] relative text-center
+        <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-[#B76E79] relative text-center
           after:content-[''] after:block after:w-[130px] after:h-1 after:bg-[#B76E79] after:mt-3 after:mx-auto">
-          Pourquoi faire appel à une correctrice-relectrice ? </h2>
+          Pourquoi faire appel à une correctrice-relectrice ?
+        </h2>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:px-12 px-6 text-center md:text-left">
           <div>
