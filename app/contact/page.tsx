@@ -71,7 +71,7 @@ export default function ContactPage() {
           <div className="bg-white [box-shadow:0_2px_14px_-3px_rgba(14,14,14,0.3)] rounded-2xl p-6 sm:p-10">
             
             <div className="text-center sm:text-left">
-              <h2 className="text-3xl font-bold text-center mb-12 text-gray-600">Me contacter</h2>
+              <h2 className="text-3xl font-bold text-center mb-12 text-[#B76E79]">Me contacter</h2>
               <p className="text-[15px] text-center text-gray-700 leading-relaxed">Une question, un projet, un besoin de correction ?</p>
               <p className="text-[15px] text-center text-gray-700 leading-relaxed">Je serai ravie d’échanger avec vous.</p>
             </div>
@@ -125,7 +125,7 @@ export default function ContactPage() {
               <div className="col-span-full">
                 <button
                   type='submit'
-                  className="text-gray-800 bg-gray-50 hover:bg-gray-150 hover:ring-2 hover:ring-gray-300 hover:ring-offset-2 text-sm rounded-md font-medium px-4 py-2.5 
+                  className="text-gray-800 bg-gray-100 hover:bg-gray-150 hover:ring-2 hover:ring-gray-300 hover:ring-offset-2 text-sm rounded-md font-medium px-4 py-2.5 
                              cursor-pointer w-full mt-2! transition"
                 >
                   Envoyer le message

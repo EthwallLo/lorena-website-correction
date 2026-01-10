@@ -32,7 +32,7 @@ export default function HomePage() {
                 });
               }
             }}
-            className="mt-6 px-6 py-3 bg-gray-100 text-gray-800 rounded-md font-medium hover:scale-105 transition transform"
+            className="mt-6 px-6 py-3 bg-gray-50 text-gray-800 rounded-md font-medium hover:scale-105 transition transform"
           >
             Découvrir ↓
           </button>
@@ -85,7 +85,7 @@ export default function HomePage() {
             <p className="text-gray-700 mb-6">Mon objectif est de faire ressortir le meilleur de vos textes tout en respectant votre style et votre voix.</p>
             <button
               onClick={() => window.location.href = '/qui-suis-je'}
-              className="relative h-12 overflow-hidden rounded bg-gray-100 px-5 py-2.5 text-gray-800 font-medium transition-all 
+              className="relative h-12 overflow-hidden rounded bg-white px-5 py-2.5 text-gray-800 font-medium transition-all 
               duration-300 hover:bg-gray-150 hover:ring-2 hover:ring-gray-300 hover:ring-offset-2 cursor-pointer">
               <span className="relative">Découvrir mon parcours</span>
             </button>
