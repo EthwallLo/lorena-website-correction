@@ -44,8 +44,15 @@ export default function PrivacyPolicyPage() {
               </p>
               <p>
                 Pour toute question relative à la protection de vos données,
-                vous pouvez me contacter via la page <strong>Contact</strong> du
-                site.
+                vous pouvez me contacter via la page{" "}
+                <a
+                  href="https://aumotjuste-correction.fr/contact"
+                  className="text-[#B76E79] font-bold"
+                  rel="noopener noreferrer"
+                >
+                  Contact
+                </a>{" "}
+                du site.
               </p>
 
               <h2 className="text-2xl font-bold text-[#B76E79]">
@@ -56,21 +63,22 @@ export default function PrivacyPolicyPage() {
                 utilisez ce site, notamment lorsque vous me contactez via le
                 formulaire de contact.
               </p>
-              <p>Les données susceptibles d’être collectées sont :</p>
-              <ul className="list-disc list-inside space-y-1">
-                <li>
-                  <strong>Nom et/ou prénom</strong>
-                </li>
-                <li>
-                  <strong>Adresse e-mail</strong>
-                </li>
-                <li>
-                  <strong>Numéro de téléphone</strong> (si renseigné)
-                </li>
-                <li>
-                  <strong>Contenu du message</strong>
-                </li>
-              </ul>
+              <p>Les données susceptibles d’être collectées sont :
+                <ul className="list-disc list-inside space-y-1">
+                  <li>
+                    <strong>Nom et/ou prénom</strong>
+                  </li>
+                  <li>
+                    <strong>Adresse e-mail</strong>
+                  </li>
+                  <li>
+                    <strong>Numéro de téléphone</strong> (si renseigné)
+                  </li>
+                  <li>
+                    <strong>Contenu du message</strong>
+                  </li>
+                </ul>
+              </p>
               <p>
                 Aucune donnée personnelle n’est collectée sans votre{" "}
                 <strong>consentement explicite</strong>.
@@ -159,7 +167,14 @@ export default function PrivacyPolicyPage() {
               </ul>
               <p>
                 Vous pouvez exercer ces droits en me contactant via la page{" "}
-                <strong>Contact</strong> du site.
+                <a
+                  href="https://aumotjuste-correction.fr/contact"
+                  className="text-[#B76E79] font-bold"
+                  rel="noopener noreferrer"
+                >
+                  Contact
+                </a>{" "}
+                du site.
               </p>
 
               <h2 className="text-2xl font-bold text-[#B76E79]">
