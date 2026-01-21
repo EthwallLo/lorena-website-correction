@@ -1,6 +1,8 @@
 import "./globals.css";
+import Script from "next/script";
 import Header from "./components/header";
-import Footer from "./components/footer"; 
+import CookieBanner from "./components/cookiebanner";
+import Footer from "./components/footer";
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -11,23 +13,53 @@ const montserrat = Montserrat({
 export const metadata = {
   title: "Au mot juste - Correction, relecture et réécriture professionnelle",
   description: "Correction, relecture et réécriture professionnelle",
-  icon: "/icon.png",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="fr">
       <head>
-        <link rel="icon" href="/icon.png"/>
+        <link rel="icon" href="/icon.png" />
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-E0KQQHDG2G"
+          strategy="afterInteractive"
+        />
+        <Script id="google-consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+
+            gtag('consent', 'default', {
+              ad_storage: 'denied',
+              analytics_storage: 'denied'
+            });
+
+            gtag('js', new Date());
+            gtag('config', 'G-E0KQQHDG2G', {
+              anonymize_ip: true
+            });
+          `}
+        </Script>
       </head>
-      <body className={`${montserrat.className} bg-white text-gray-900`}>
+
+      <body
+        suppressHydrationWarning
+        className={`${montserrat.className} bg-white text-gray-900`}
+      >
         <Header />
 
-        <main> 
-          {children}
-        </main>
+        <main>{children}</main>
 
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );
