@@ -18,23 +18,6 @@ export default function CookieBanner() {
     }
   }, []);
 
-  const loadGtag = () => {
-    if (document.getElementById("gtag-script")) return;
-
-    const script = document.createElement("script");
-    script.id = "gtag-script";
-    script.async = true;
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-E0KQQHDG2G";
-
-    document.head.appendChild(script);
-
-    script.onload = () => {
-      window.gtag("config", "G-E0KQQHDG2G", {
-        anonymize_ip: true,
-      });
-    };
-  };
-
   const acceptCookies = () => {
     localStorage.setItem("cookie-consent", "accepted");
 
@@ -45,7 +28,10 @@ export default function CookieBanner() {
       ad_personalization: "granted",
     });
 
-    loadGtag();
+    window.gtag("config", "G-E0KQQHDG2G", {
+      anonymize_ip: true,
+    });
+
     setVisible(false);
   };
 

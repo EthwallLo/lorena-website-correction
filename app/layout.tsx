@@ -26,7 +26,10 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
-        <link rel="icon" href="/icon.png" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-E0KQQHDG2G"
+          strategy="afterInteractive"
+        />
 
         <Script id="google-consent-default" strategy="beforeInteractive">
           {`
