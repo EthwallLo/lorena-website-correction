@@ -2,6 +2,12 @@
 
 import { useEffect, useState } from "react";
 
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
+
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
@@ -12,14 +18,34 @@ export default function CookieBanner() {
     }
   }, []);
 
+  const loadGtag = () => {
+    if (document.getElementById("gtag-script")) return;
+
+    const script = document.createElement("script");
+    script.id = "gtag-script";
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-E0KQQHDG2G";
+
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      window.gtag("config", "G-E0KQQHDG2G", {
+        anonymize_ip: true,
+      });
+    };
+  };
+
   const acceptCookies = () => {
     localStorage.setItem("cookie-consent", "accepted");
 
     window.gtag("consent", "update", {
+      ad_storage: "granted",
       analytics_storage: "granted",
-      ad_storage: "denied",
+      ad_user_data: "granted",
+      ad_personalization: "granted",
     });
 
+    loadGtag();
     setVisible(false);
   };
 
@@ -27,8 +53,10 @@ export default function CookieBanner() {
     localStorage.setItem("cookie-consent", "refused");
 
     window.gtag("consent", "update", {
-      analytics_storage: "granted",
       ad_storage: "denied",
+      analytics_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
     });
 
     setVisible(false);
@@ -42,7 +70,8 @@ export default function CookieBanner() {
         <p className="text-sm text-gray-700">
           Ce site utilise uniquement des outils de mesure d’audience afin de
           mieux comprendre son utilisation et d’améliorer son contenu. Vous
-          pouvez accepter ou refuser ces cookies. Pour en savoir plus, consultez la{" "}
+          pouvez accepter ou refuser ces cookies. Pour en savoir plus, consultez
+          la{" "}
           <a
             href="https://aumotjuste-correction.fr/confidentialite"
             className="text-[#B76E79] font-bold"
