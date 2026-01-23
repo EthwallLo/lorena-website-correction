@@ -4,7 +4,7 @@ import Typewriter from "./components/typewriter";
 export default function HomePage() {
   return (
     <div>
-
+      <meta name="google-site-verification" content="MSUVmcbKfJXbo9LdJIxFVAE9yCsROgxazl10DETeE-w" />
       {/* Ajouter packs + section accessibilité + infos à comprendre tarifs + correction après traduction - relire sites web*/}
 
       <section className="w-full relative min-h-screen md:min-h-screen flex justify-center items-center bg-cover bg-center" 
