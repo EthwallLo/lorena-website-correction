@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/monitor/:match*",
-      "destination": "https://aumotjuste-correction.fr/_vercel/:match*"
-    }
-  ]
-}
