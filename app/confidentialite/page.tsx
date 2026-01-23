@@ -63,8 +63,7 @@ export default function PrivacyPolicyPage() {
                 utilisez ce site, notamment lorsque vous me contactez via le
                 formulaire de contact.
               </p>
-              <p>
-                Les données susceptibles d’être collectées sont :
+              <p>Les données susceptibles d’être collectées sont :
                 <ul className="list-disc list-inside space-y-1">
                   <li>
                     <strong>Nom et/ou prénom</strong>
@@ -96,10 +95,6 @@ export default function PrivacyPolicyPage() {
                   prestation
                 </li>
                 <li>Assurer le bon fonctionnement et l’amélioration du site</li>
-                <li>
-                  Analyser l’usage du site via Google Analytics pour améliorer
-                  l’expérience utilisateur
-                </li>
               </ul>
               <p>
                 Vos données ne sont <strong>en aucun cas</strong> utilisées à
@@ -120,9 +115,8 @@ export default function PrivacyPolicyPage() {
               </p>
               <p>
                 Elles peuvent uniquement être traitées par des outils techniques
-                nécessaires au fonctionnement du site (hébergement, formulaire,
-                Google Analytics), dans le respect de la réglementation en
-                vigueur.
+                nécessaires au fonctionnement du site (hébergement, formulaire),
+                dans le respect de la réglementation en vigueur.
               </p>
 
               <h2 className="text-2xl font-bold text-[#B76E79]">
@@ -131,9 +125,7 @@ export default function PrivacyPolicyPage() {
               <p>
                 Les données sont conservées uniquement pendant la durée
                 nécessaire au traitement de votre demande et aux obligations
-                légales éventuelles, puis supprimées. Les données collectées par
-                Google Analytics sont anonymisées et conservées selon les
-                paramètres de Google.
+                légales éventuelles, puis supprimées.
               </p>
 
               <h2 className="text-2xl font-bold text-[#B76E79]">
@@ -149,10 +141,12 @@ export default function PrivacyPolicyPage() {
                 7. Cookies et traceurs
               </h2>
               <p>
-                Ce site utilise <strong>Google Analytics</strong> pour analyser
-                la fréquentation et l’usage du site. Les données collectées sont
-                <strong> anonymisées</strong> et ne permettent pas de vous
-                identifier personnellement.
+                Ce site <strong>n’utilise pas de cookies</strong> ni d’outils de
+                suivi à des fins publicitaires ou statistiques.
+              </p>
+              <p>
+                Aucun cookie n’est déposé sur votre appareil lors de la
+                navigation sur ce site.
               </p>
 
               <h2 className="text-2xl font-bold text-[#B76E79]">
@@ -194,7 +188,7 @@ export default function PrivacyPolicyPage() {
               </p>
 
               <p className="text-sm text-gray-500">
-                Dernière mise à jour : 22 janvier 2026
+                Dernière mise à jour : 10 janvier 2026
               </p>
             </div>
           </div>
