@@ -30,8 +30,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
 
         <Footer />
-        <Analytics basePath="/monitor" />
-        <SpeedInsights basePath="/monitor" />
+        <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   );
