@@ -26,10 +26,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <main> 
           {children}
-          <Analytics />
         </main>
 
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
