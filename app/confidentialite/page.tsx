@@ -63,7 +63,8 @@ export default function PrivacyPolicyPage() {
                 utilisez ce site, notamment lorsque vous me contactez via le
                 formulaire de contact.
               </p>
-              <p>Les données susceptibles d’être collectées sont :
+              <p>
+                Les données susceptibles d’être collectées sont :
                 <ul className="list-disc list-inside space-y-1">
                   <li>
                     <strong>Nom et/ou prénom</strong>
@@ -80,8 +81,9 @@ export default function PrivacyPolicyPage() {
                 </ul>
               </p>
               <p>
-                Aucune donnée personnelle n’est collectée sans votre{" "}
-                <strong>consentement explicite</strong>.
+                Aucune donnée personnelle n’est collectée sans que vous en soyez
+                informé et sans qu’elle soit strictement nécessaire au
+                traitement de votre demande.
               </p>
 
               <h2 className="text-2xl font-bold text-[#B76E79]">
@@ -118,14 +120,19 @@ export default function PrivacyPolicyPage() {
                 nécessaires au fonctionnement du site (hébergement, formulaire),
                 dans le respect de la réglementation en vigueur.
               </p>
+              <p>
+                Certaines données techniques anonymisées peuvent être traitées
+                par Vercel Inc. dans le cadre de l’hébergement et de la mesure
+                d’audience du site.
+              </p>
 
               <h2 className="text-2xl font-bold text-[#B76E79]">
                 5. Durée de conservation
               </h2>
               <p>
-                Les données sont conservées uniquement pendant la durée
-                nécessaire au traitement de votre demande et aux obligations
-                légales éventuelles, puis supprimées.
+                Les données issues du formulaire de contact sont conservées
+                pendant la durée nécessaire au traitement de la demande, puis
+                supprimées ou archivées à des fins légales si nécessaire.
               </p>
 
               <h2 className="text-2xl font-bold text-[#B76E79]">
@@ -138,15 +145,56 @@ export default function PrivacyPolicyPage() {
               </p>
 
               <h2 className="text-2xl font-bold text-[#B76E79]">
-                7. Cookies et traceurs
+                7. Mesure d’audience et cookies
               </h2>
+
               <p>
-                Ce site <strong>n’utilise pas de cookies</strong> ni d’outils de
-                suivi à des fins publicitaires ou statistiques.
+                Ce site utilise des outils de mesure d’audience afin de mieux
+                comprendre son utilisation et d’en améliorer le contenu, tout en
+                respectant la vie privée des visiteurs.
               </p>
+
+              <p>Les outils utilisés sont :</p>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li>Vercel Web Analytics</li>
+                <li>Vercel Speed Insights</li>
+              </ul>
+
               <p>
-                Aucun cookie n’est déposé sur votre appareil lors de la
-                navigation sur ce site.
+                Ces outils collectent uniquement des données techniques et
+                anonymisées, telles que :
+              </p>
+
+              <ul className="list-disc list-inside space-y-1">
+                <li>Pages consultées</li>
+                <li>Durée de navigation</li>
+                <li>Type d’appareil et de navigateur</li>
+                <li>
+                  Performances techniques du site (temps de chargement,
+                  stabilité)
+                </li>
+              </ul>
+
+              <p>
+                Aucune donnée personnelle directement identifiable (nom, adresse
+                e-mail, adresse IP complète) n’est collectée. Ces outils
+                n’utilisent pas de cookies et ne permettent aucun suivi
+                individuel des utilisateurs à des fins publicitaires ou
+                marketing.
+              </p>
+
+              <p>
+                Conformément aux recommandations de la CNIL, ces traitements de
+                mesure d’audience sont exemptés de consentement préalable
+                lorsqu’ils sont strictement nécessaires au fonctionnement et à
+                l’amélioration du site.
+              </p>
+
+              <p>
+                Les données collectées sont traitées par la société{" "}
+                <strong>Vercel Inc.</strong>, fournisseur de l’hébergement et
+                des outils d’analyse du site.
               </p>
 
               <h2 className="text-2xl font-bold text-[#B76E79]">
@@ -164,6 +212,7 @@ export default function PrivacyPolicyPage() {
                 <li>Droit de rectification</li>
                 <li>Droit à l’effacement</li>
                 <li>Droit à la limitation du traitement</li>
+                <li>Droit d’opposition au traitement de vos données</li>
               </ul>
               <p>
                 Vous pouvez exercer ces droits en me contactant via la page{" "}
@@ -175,6 +224,19 @@ export default function PrivacyPolicyPage() {
                   Contact
                 </a>{" "}
                 du site.
+              </p>
+              <p>
+                Si vous estimez, après m’avoir contactée, que vos droits ne sont
+                pas respectés, vous disposez du droit d’introduire une
+                réclamation auprès de la{" "}
+                <a
+                  href="https://www.cnil.fr/fr"
+                  className="text-[#B76E79] font-bold"
+                  rel="noopener noreferrer"
+                >
+                  CNIL
+                </a>
+                .
               </p>
 
               <h2 className="text-2xl font-bold text-[#B76E79]">
