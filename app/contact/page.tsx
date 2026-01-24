@@ -52,7 +52,7 @@ export default function ContactPage() {
 
       <section
         className="relative w-full h-[45vh] flex justify-center items-center"
-        style={{ backgroundImage: "url('/image-carnet.jpg')", backgroundSize: "cover", backgroundPosition: "center" }} >
+        style={{ backgroundImage: "url('/image-carnet.webp')", backgroundSize: "cover", backgroundPosition: "center" }} >
         <div className="absolute inset-0 bg-black/10"></div>
 
         <div className="relative z-10 text-center px-6 flex flex-col items-center">

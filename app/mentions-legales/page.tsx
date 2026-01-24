@@ -4,7 +4,7 @@ export default function MentionsLegalesPage() {
       <section
         className="relative w-full h-[45vh] flex justify-center items-center"
         style={{
-          backgroundImage: "url('/image-carnet.jpg')",
+          backgroundImage: "url('/image-carnet.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

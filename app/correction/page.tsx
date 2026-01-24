@@ -3,7 +3,7 @@ export default function CorrectionPage() {
     <div className="w-full min-h-screen flex flex-col">
       <section id="phototitre"
         className="relative w-full h-[45vh] flex justify-center items-center"
-        style={{ backgroundImage: "url('/image-carnet-2.jpg')", backgroundSize: "cover", backgroundPosition: "center" }} >
+        style={{ backgroundImage: "url('/image-carnet-2.webp')", backgroundSize: "cover", backgroundPosition: "center" }} >
         <div className="relative z-10 text-center px-6 flex flex-col items-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-800 after:mt-3 after:mx-auto">La correction</h1>
         </div>
@@ -52,7 +52,7 @@ export default function CorrectionPage() {
         </section>
       </section>
 
-      <section id="corps" className="relative justify-center items-center bg-white" style={{ backgroundImage: "url('/librairie.jpg')" }}>
+      <section id="corps" className="relative justify-center items-center bg-white" style={{ backgroundImage: "url('/librairie.webp')" }}>
         <section
           className="py-20 bg-cover bg-center">
           <h2 className="text-center text-3xl font-bold text-gray-600 mb-16 after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 after:mx-auto">

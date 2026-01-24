@@ -1,5 +1,6 @@
 "use client";
 import Typewriter from "./components/typewriter";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -8,7 +9,8 @@ export default function HomePage() {
       {/* Ajouter packs + section accessibilité + infos à comprendre tarifs + correction après traduction - relire sites web*/}
 
       <section className="w-full relative min-h-screen md:min-h-screen flex justify-center items-center bg-cover bg-center" 
-        style={{ backgroundImage: "url('/image-carnet.jpg')" }}>
+        style={{ backgroundImage: "url('/image-carnet.webp')" }}>
+
         <div className="absolute inset-0 bg-black/10"></div> 
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6 md:px-12">
           <Typewriter />
@@ -77,7 +79,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="a-propos" className="relative bg-gray-100" style={{ backgroundImage: "url('/image-bureau.jpg')", backgroundSize: "cover", backgroundPosition: "center", minHeight: "80vh", paddingTop: "11rem"}}>
+      <section id="a-propos" className="relative bg-gray-100" style={{ backgroundImage: "url('/image-bureau.webp')", backgroundSize: "cover", backgroundPosition: "center", minHeight: "80vh", paddingTop: "11rem"}}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:px-12 px-6">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3">À propos de moi</h2>
@@ -165,7 +167,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="prestations" className="relative justify-center items-center" style={{ backgroundImage: "url('/image-carnet-2.jpg')", backgroundPosition: "center", 
+      <section id="prestations" className="relative justify-center items-center" style={{ backgroundImage: "url('/image-carnet-2.webp')", backgroundPosition: "center", 
         backgroundSize: "cover", minHeight: "70vh", paddingTop: "8rem",  paddingBottom: "5rem"}}>
           <h2 className="text-3xl font-bold mb-12 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 text-center after:mx-auto">
             Mes prestations

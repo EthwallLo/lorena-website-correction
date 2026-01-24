@@ -4,7 +4,7 @@ export default function PrivacyPolicyPage() {
       <section
         className="relative w-full h-[45vh] flex justify-center items-center"
         style={{
-          backgroundImage: "url('/image-carnet.jpg')",
+          backgroundImage: "url('/image-carnet.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -63,23 +63,22 @@ export default function PrivacyPolicyPage() {
                 utilisez ce site, notamment lorsque vous me contactez via le
                 formulaire de contact.
               </p>
-              <p>
-                Les données susceptibles d’être collectées sont :
-                <ul className="list-disc list-inside space-y-1">
-                  <li>
-                    <strong>Nom et/ou prénom</strong>
-                  </li>
-                  <li>
-                    <strong>Adresse e-mail</strong>
-                  </li>
-                  <li>
-                    <strong>Numéro de téléphone</strong> (si renseigné)
-                  </li>
-                  <li>
-                    <strong>Contenu du message</strong>
-                  </li>
-                </ul>
-              </p>
+              <p>Les données susceptibles d’être collectées sont :</p>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  <strong>Nom et/ou prénom</strong>
+                </li>
+                <li>
+                  <strong>Adresse e-mail</strong>
+                </li>
+                <li>
+                  <strong>Numéro de téléphone</strong> (si renseigné)
+                </li>
+                <li>
+                  <strong>Contenu du message</strong>
+                </li>
+              </ul>
+
               <p>
                 Aucune donnée personnelle n’est collectée sans que vous en soyez
                 informé et sans qu’elle soit strictement nécessaire au

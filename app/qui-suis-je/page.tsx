@@ -108,7 +108,7 @@ export default function QuiSuisJePage() {
         id="phototitre"
         className="relative w-full h-[45vh] flex justify-center items-center"
         style={{
-          backgroundImage: "url('/image-pc.jpg')",
+          backgroundImage: "url('/image-pc.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
