@@ -3,12 +3,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Header from "./components/header";
 import Footer from "./components/footer"; 
-import { Montserrat } from "next/font/google";
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "900"],
-});
+import { montserrat } from "./fonts";
 
 export const metadata = {
   title: "Au mot juste | Correction, relecture et réécriture professionnelle",

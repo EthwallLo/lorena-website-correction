@@ -1,4 +1,6 @@
+"use client";
 import { useEffect, useState } from "react";
+import { cutive } from "@/app/fonts";
 
 export default function Typewriter() {
   const text = "Au mot juste";
@@ -16,7 +18,9 @@ export default function Typewriter() {
   }, []);
 
   return (
-    <h1 className="font-cutive text-4xl md:text-5xl font-bold mb-2 text-gray-800 whitespace-nowrap">
+    <h1
+      className={`${cutive.className} text-4xl md:text-5xl font-normal mb-2 text-gray-800 whitespace-nowrap`}
+    >
       {currentText}
       <span className="ml-0.5 animate-blink">|</span>
     </h1>
