@@ -1,6 +1,11 @@
 "use client";
 import Typewriter from "./components/typewriter";
-import Image from "next/image";
+
+export const metadata = {
+  title: "Au mot juste | Correction, relecture et réécriture professionnelle",
+  description: "Je corrige, relis et réécris vos textes avec soin tout en respectant votre style et votre voix. Découvrez mon approche personnalisée.",
+  icon: "/icon.png",
+};
 
 export default function HomePage() {
   return (
