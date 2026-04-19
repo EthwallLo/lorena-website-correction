@@ -1,32 +1,38 @@
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "./components/header";
-import Footer from "./components/footer"; 
+import Footer from "./components/footer";
 import { montserrat } from "./fonts";
 
 export const metadata = {
-  title: "Au mot juste | Correction, relecture et réécriture professionnelle",
-  description: "Je corrige, relis et réécris vos textes avec soin tout en respectant votre style et votre voix. Découvrez mon approche personnalisée.",
+  title: "Correctrice relectrice freelance | Correction professionnelle de textes - Au mot juste",
+  description:
+    "Correction professionnelle complète : orthographe, grammaire, syntaxe, cohérence et style. Je corrige, relis et réécris vos textes avec soin en respectant votre voix.",
   icon: "/icon.png",
+  verification: {
+    google: "MSUVmcbKfJXbo9LdJIxFVAE9yCsROgxazl10DETeE-w",
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="fr">
       <head>
-        <link rel="icon" href="/icon.png"/>
+        <link rel="icon" href="/icon.png" />
       </head>
       <body className={`${montserrat.className} bg-white text-gray-900`}>
         <Header />
 
-        <main> 
-          {children}
-        </main>
+        <main>{children}</main>
 
         <Footer />
         <Analytics />
-        <SpeedInsights/>
+        <SpeedInsights />
       </body>
     </html>
   );

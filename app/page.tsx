@@ -4,8 +4,13 @@ import Typewriter from "./components/typewriter";
 export default function HomePage() {
   return (
     <div>
-      <meta name="google-site-verification" content="MSUVmcbKfJXbo9LdJIxFVAE9yCsROgxazl10DETeE-w" />
       {/* Ajouter packs + section accessibilité + infos à comprendre tarifs + correction après traduction - relire sites web*/}
+      <h1 className="sr-only">
+        Correction, relecture et réécriture professionnelle
+      </h1>
+      <p className="sr-only">
+        Je suis correctrice relectrice freelance spécialisée dans la correction professionnelle de textes : manuscrits, documents professionnels, contenus web et écrits académiques. J’interviens sur l’orthographe, la grammaire, la syntaxe et la fluidité, tout en respectant votre style et votre intention.
+      </p>
 
       <section className="w-full relative min-h-screen md:min-h-screen flex justify-center items-center bg-cover bg-center" 
         style={{ backgroundImage: "url('/image-carnet.webp')" }}>

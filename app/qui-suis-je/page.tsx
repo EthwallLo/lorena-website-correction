@@ -21,7 +21,7 @@ const experiences = [
   {
     title: "Responsable, rédactrice et correctrice",
     company: "Workyt",
-    location: "France (Remote)",
+    location: "France (À distance)",
     period: "2023 - Aujourd’hui",
     type: "Bénévolat",
     description:
@@ -30,7 +30,7 @@ const experiences = [
   {
     title: "Rédactrice",
     company: "Sciences for Girls",
-    location: "France (Remote)",
+    location: "France (À distance)",
     period: "2024",
     type: "Bénévolat",
     description:
@@ -39,7 +39,7 @@ const experiences = [
   {
     title: "Traductrice et relectrice",
     company: "Solinum",
-    location: "France (Remote)",
+    location: "France (À distance)",
     period: "2021 - Aujourd’hui",
     type: "Bénévolat",
     description:
