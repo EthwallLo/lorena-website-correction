@@ -6,23 +6,12 @@ import Footer from "./components/footer";
 import { montserrat } from "./fonts";
 
 export const metadata = {
-  title: "Au mot juste | Correction, relecture et réécriture professionnelle",
+  title: "Au mot juste | Correction et relecture professionnelle",
   description:
-    "Correctrice freelance spécialisée en relecture professionnelle et correction de textes. J’améliore l’orthographe, la grammaire, la syntaxe et le style de vos écrits : manuscrits, CV, documents professionnels et contenus web.",
+    "Je corrige, relis et réécris vos textes avec soin tout en respectant votre style et votre voix. Correction professionnelle de manuscrits, CV, documents et contenus web.",
   icon: "/icon.png",
   verification: {
     google: "MSUVmcbKfJXbo9LdJIxFVAE9yCsROgxazl10DETeE-w",
-  },
-  alternates: {
-    canonical: "https://aumotjuste-correction.fr",
-  },
-  openGraph: {
-    title: "Au mot juste | Correction, relecture et réécriture professionnelle",
-    description:
-      "Correctrice freelance spécialisée en relecture professionnelle et correction de textes.",
-    url: "https://aumotjuste-correction.fr",
-    siteName: "Au mot juste",
-    type: "website",
   },
 };
 
