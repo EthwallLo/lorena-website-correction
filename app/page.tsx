@@ -4,9 +4,8 @@ import Typewriter from "./components/typewriter";
 export default function HomePage() {
   return (
     <div>
-      {/* Ajouter packs + section accessibilité + infos à comprendre tarifs + correction après traduction - relire sites web*/}
       <h1 className="sr-only">
-        Correction, relecture et réécriture professionnelle
+        Au mot juste, correctrice relectrice freelance spécialisée en correction professionnelle de textes
       </h1>
       <p className="sr-only">
         Je suis correctrice relectrice freelance spécialisée dans la correction professionnelle de textes : manuscrits, documents professionnels, contenus web et écrits académiques. J’interviens sur l’orthographe, la grammaire, la syntaxe et la fluidité, tout en respectant votre style et votre intention.

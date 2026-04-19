@@ -6,7 +6,7 @@ import Footer from "./components/footer";
 import { montserrat } from "./fonts";
 
 export const metadata = {
-  title: "Correctrice relectrice freelance | Correction professionnelle de textes - Au mot juste",
+  title: "Au mot juste | Correctrice relectrice freelance – correction professionnelle de textes",
   description:
     "Correction professionnelle complète : orthographe, grammaire, syntaxe, cohérence et style. Je corrige, relis et réécris vos textes avec soin en respectant votre voix.",
   icon: "/icon.png",
