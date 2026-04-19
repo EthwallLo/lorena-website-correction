@@ -35,7 +35,6 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="icon" href="/icon.png" />
-        <title>Au mot juste | Correction, relecture et réécriture professionnelle</title>
       </head>
       <body className={`${montserrat.className} bg-white text-gray-900`}>
         <Header />
