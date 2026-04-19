@@ -7,9 +7,9 @@ export default function HomePage() {
   return (
     <div>
       <section className="sr-only">
-        {/* <h1 className="sr-only">
-          Au mot juste - Correction, relecture et réécriture professionnelle
-        </h1> */}
+        <h1 className="sr-only">
+          Au mot juste | Correction, relecture et réécriture professionnelle
+        </h1>
         <p className="sr-only">
           Correctrice freelance spécialisée en relecture professionnelle et correction de textes. J’améliore l’orthographe, la grammaire, la syntaxe et le style de vos écrits : manuscrits, CV, documents professionnels et contenus web.
         </p>
