@@ -254,16 +254,15 @@ export default function HomePage() {
               alt="Correction"
               className="w-20 mx-auto mb-6 opacity-90"
             />
-            <h3 className="text-xl font-semibold text-gray-800 mb-4 min-h-[56px] flex flex-col justify-center">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 min-h-14 flex flex-col justify-center">
               <span className="block">Correction</span>
               <span className="block">Relecture</span>
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
               Correction complète et rigoureuse de vos textes, incluant
-              l’orthographe, la grammaire, la syntaxe et la ponctuation ; 
-              mais également des reformulations afin d’améliorer la
-              clarté, et la cohérence de votre contenu, tout en
-              respectant votre style.
+              l’orthographe, la grammaire, la syntaxe et la ponctuation ; mais
+              également des reformulations afin d’améliorer la clarté, la fluidité et la
+              cohérence de votre contenu, tout en respectant votre style.
             </p>
             <button
               onClick={() => (window.location.href = "/correction")}
@@ -276,20 +275,25 @@ export default function HomePage() {
           <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
             <img
               src="/redaction.svg"
-              alt="Correction"
+              alt="Alpha et bêta lecture"
               className="w-20 mx-auto mb-6 opacity-90"
             />
-            <h3 className="text-xl font-semibold text-gray-800 mb-4 min-h-[56px] flex flex-col justify-center">
-              Bêta-lecture
+
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 min-h-14 flex flex-col justify-center">
+              <span className="block">Alpha-lecture</span>
+              <span className="block">Bêta-lecture</span>
             </h3>
+
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Une lecture approfondie d'un texte avec un regard extérieur et
-              constructif. J’analyse la cohérence de l’intrigue, le rythme, les
-              personnages et la fluidité globale, tout en proposant des retours
-              détaillés pour améliorer votre texte sans en dénaturer le style.
+              Deux types de lectures complémentaires pour accompagner votre
+              projet d’écriture à différentes étapes de son développement. De la
+              construction du récit jusqu’à la version presque finalisée, vous
+              bénéficiez d’un regard extérieur bienveillant et constructif pour
+              faire évoluer votre manuscrit.
             </p>
+
             <button
-              onClick={() => (window.location.href = "/correction")}
+              onClick={() => (window.location.href = "/beta-lecture")}
               className="mt-auto w-fit self-center px-6 py-3 bg-[#B76E79] text-white rounded-md hover:bg-[#a4626c] transition-colors duration-300"
             >
               En savoir plus
@@ -302,7 +306,7 @@ export default function HomePage() {
               alt="Correction"
               className="w-20 mx-auto mb-6 opacity-90"
             />
-            <h3 className="text-xl font-semibold text-gray-800 mb-4 min-h-[56px] flex flex-col justify-center">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4 min-h-14 flex flex-col justify-center">
               <span className="block">Sous-titrage</span>
               <span className="block">Transcription</span>
             </h3>
@@ -313,7 +317,7 @@ export default function HomePage() {
               et à une adaptation soignée pour une lecture naturelle.
             </p>
             <button
-              onClick={() => (window.location.href = "/correction")}
+              onClick={() => (window.location.href = "/transcription")}
               className="mt-auto w-fit self-center px-6 py-3 bg-[#B76E79] text-white rounded-md hover:bg-[#a4626c] transition-colors duration-300"
             >
               En savoir plus

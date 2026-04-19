@@ -18,34 +18,59 @@ export default function Header() {
     <header
       className={
         "fixed top-0 left-0 w-full py-4 z-50 transition-all duration-300 " +
-        (scrolled ? "bg-white shadow-sm" : "bg-transparent")
+        (scrolled || open
+          ? "bg-white shadow-sm"
+          : "bg-white/15 backdrop-blur-md")
       }
     >
-      <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 relative">
+      <nav className="w-full flex justify-between items-center px-4 relative">
         <Link href="/">
           <Image src="/logo-moderne.svg" alt="Logo" width={140} height={80} />
         </Link>
 
-        <div className="hidden md:flex space-x-8 text-gray-800 text-lg">
+        <div className="hidden lg:flex space-x-8 text-gray-800 text-lg ml-auto">
           <NavLink href="/">Accueil</NavLink>
-          <NavLink href="/correction">Correction</NavLink>
+          <div className="relative group">
+            <span className="cursor-pointer">Prestations</span>
+            <div
+              className={
+                "absolute left-0 mt-2 w-70 rounded-md shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 " +
+                (scrolled
+                  ? "bg-white"
+                  : "bg-white/70 backdrop-blur-md border border-white/20")
+              }
+            >
+              <div className="flex flex-col text-base">
+                <Link
+                  href="/correction"
+                  className="px-4 py-2 hover:bg-gray-100"
+                >
+                  Correction et relecture
+                </Link>
+                <Link
+                  href="/beta-lecture"
+                  className="px-4 py-2 hover:bg-gray-100"
+                >
+                  Alpha-lecture et bêta-lecture
+                </Link>
+                <Link
+                  href="/transcription"
+                  className="px-4 py-2 hover:bg-gray-100"
+                >
+                  Transcription et sous-titrage
+                </Link>
+              </div>
+            </div>
+          </div>
           <NavLink href="/qui-suis-je">Qui suis-je</NavLink>
           <NavLink href="/contact">Contact</NavLink>
         </div>
 
-        <button
-          className="md:hidden text-gray-800"
-          onClick={() => setOpen(!open)}
-        >
-          {open ? "✕" : "☰"}
-        </button>
-      </nav>
-
-      <Link
-        href="https://www.linkedin.com/in/lorena-guedouani/"
-        target="_blank"
-        className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2"
-      >
+        <Link
+  href="https://www.linkedin.com/in/lorena-guedouani/"
+  target="_blank"
+  className="hidden lg:block ml-50"
+>
         <Image
           src="/linkedin.svg"
           alt="LinkedIn"
@@ -55,12 +80,36 @@ export default function Header() {
         />
       </Link>
 
+        <button
+          className="lg:hidden text-gray-800"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? "✕" : "☰"}
+        </button>
+      </nav>
+
+
+
       {open && (
-        <div className="md:hidden bg-white text-gray-800 shadow-md p-6 flex flex-col space-y-4 text-lg">
-          <NavLink href="/" onClick={() => setOpen(false)}>Accueil</NavLink>
-          <NavLink href="/correction" onClick={() => setOpen(false)}>Correction</NavLink>
-          <NavLink href="/qui-suis-je" onClick={() => setOpen(false)}>Qui suis-je</NavLink>
-          <NavLink href="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
+        <div className="lg:hidden bg-white text-gray-800 shadow-md p-6 flex flex-col space-y-4 text-lg">
+          <NavLink href="/" onClick={() => setOpen(false)}>
+            Accueil
+          </NavLink>
+          <NavLink href="/correction" onClick={() => setOpen(false)}>
+            Correction et relecture
+          </NavLink>
+          <NavLink href="/beta-lecture" onClick={() => setOpen(false)}>
+            Alpha-lecture et bêta-lecture
+          </NavLink>
+          <NavLink href="/transcription" onClick={() => setOpen(false)}>
+            Transcription et sous-titrage
+          </NavLink>
+          <NavLink href="/qui-suis-je" onClick={() => setOpen(false)}>
+            Qui suis-je
+          </NavLink>
+          <NavLink href="/contact" onClick={() => setOpen(false)}>
+            Contact
+          </NavLink>
 
           <Link
             href="https://www.linkedin.com/in/lorena-guedouani/"

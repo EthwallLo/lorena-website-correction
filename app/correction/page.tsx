@@ -68,7 +68,7 @@ export default function CorrectionPage() {
               </p>
 
               <p className="mt-4 font-semibold text-gray-700">
-                <span className="text-[#B76E79] font-bold">3 €</span> / 1000 signes
+                <span className="text-[#B76E79] font-bold">2 €</span> / 1000 signes
               </p>
             </div>
             <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition text-center">
@@ -78,7 +78,7 @@ export default function CorrectionPage() {
               </p>
 
               <p className="mt-4 font-semibold text-gray-700">
-                <span className="text-[#B76E79] font-bold">4 €</span> / 1000 signes
+                <span className="text-[#B76E79] font-bold">3 €</span> / 1000 signes
               </p>
             </div>
             </section>
