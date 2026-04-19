@@ -6,12 +6,23 @@ import Footer from "./components/footer";
 import { montserrat } from "./fonts";
 
 export const metadata = {
-  title: "Au mot juste | Correctrice relectrice freelance – correction professionnelle de textes",
+  title: "Au mot juste | Correction, relecture et réécriture professionnelle",
   description:
-    "Correction professionnelle complète : orthographe, grammaire, syntaxe, cohérence et style. Je corrige, relis et réécris vos textes avec soin en respectant votre voix.",
+    "Correctrice freelance spécialisée en relecture professionnelle et correction de textes. J’améliore l’orthographe, la grammaire, la syntaxe et le style de vos écrits : manuscrits, CV, documents professionnels et contenus web.",
   icon: "/icon.png",
   verification: {
     google: "MSUVmcbKfJXbo9LdJIxFVAE9yCsROgxazl10DETeE-w",
+  },
+  alternates: {
+    canonical: "https://aumotjuste-correction.fr",
+  },
+  openGraph: {
+    title: "Au mot juste | Correction, relecture et réécriture professionnelle",
+    description:
+      "Correctrice freelance spécialisée en relecture professionnelle et correction de textes.",
+    url: "https://aumotjuste-correction.fr",
+    siteName: "Au mot juste",
+    type: "website",
   },
 };
 
@@ -24,6 +35,7 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="icon" href="/icon.png" />
+        <title>Au mot juste | Correction, relecture et réécriture professionnelle</title>
       </head>
       <body className={`${montserrat.className} bg-white text-gray-900`}>
         <Header />
