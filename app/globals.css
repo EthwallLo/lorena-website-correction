@@ -4,6 +4,18 @@ html, body {
   overflow-x: hidden;
 }
 
+html[data-text-size="small"] {
+  font-size: 93.75%;
+}
+
+html[data-text-size="normal"] {
+  font-size: 100%;
+}
+
+html[data-text-size="large"] {
+  font-size: 112.5%;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

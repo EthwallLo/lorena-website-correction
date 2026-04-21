@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import BackToTopButton from "./components/backToTopButton";
+import TextSizeControls from "./components/textSizeControls";
 import { montserrat } from "./fonts";
 
 export const metadata = {
@@ -44,6 +45,7 @@ export default function RootLayout({
         <main>{children}</main>
 
         <Footer />
+        <TextSizeControls />
         <BackToTopButton />
         <Analytics />
         <SpeedInsights />
