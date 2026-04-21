@@ -34,7 +34,7 @@ export default function BackToTopButton() {
           : "pointer-events-none translate-y-3 opacity-0"
       }`}
     >
-      <span className="text-lg leading-none">&uarr;</span>
+      <span aria-hidden="true" className="text-lg leading-none">&uarr;</span>
     </button>
   );
 }

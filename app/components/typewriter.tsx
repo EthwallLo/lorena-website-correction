@@ -7,6 +7,11 @@ export default function Typewriter() {
   const [currentText, setCurrentText] = useState("");
 
   useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setCurrentText(text);
+      return;
+    }
+
     let i = 0;
     const interval = setInterval(() => {
       setCurrentText(text.slice(0, i + 1));
@@ -18,11 +23,12 @@ export default function Typewriter() {
   }, []);
 
   return (
-    <h1
+    <div
+      aria-hidden="true"
       className={`${cutive.className} text-4xl md:text-5xl font-normal mb-2 text-gray-800 whitespace-nowrap`}
     >
       {currentText}
       <span className="ml-0.5 animate-blink">|</span>
-    </h1>
+    </div>
   );
 }

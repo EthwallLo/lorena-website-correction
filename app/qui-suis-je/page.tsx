@@ -106,6 +106,7 @@ export default function QuiSuisJePage() {
     <div className="w-full flex flex-col">
       <section
         id="phototitre"
+        aria-labelledby="qui-suis-je-titre"
         className="relative w-full h-[45vh] flex justify-center items-center"
         style={{
           backgroundImage: "url('/image-pc.webp')",
@@ -114,21 +115,21 @@ export default function QuiSuisJePage() {
         }}
       >
         <div className="relative z-10 text-center px-6 flex flex-col items-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-800 after:mt-3 after:mx-auto">
+          <h1 id="qui-suis-je-titre" className="text-4xl md:text-5xl font-bold text-gray-800 after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-800 after:mt-3 after:mx-auto">
             Qui suis-je ?
           </h1>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
+        <div aria-hidden="true" className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
         <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200/50 text-gray-700 text-[10px] italic px-1 py-0.5 rounded rotate-90 origin-left">
           Photo : Minh Pham / Unsplash
         </div>
       </section>
 
-      <section id="a-propos" className="relative bg-white min-h-[50vh] pt-40">
+      <section id="a-propos" aria-labelledby="a-propos-lorena" className="relative bg-white min-h-[50vh] pt-40">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 px-6">
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold mb-10 text-[#B76E79] relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-[#B76E79] after:mt-3">
-              Moi, c'est Lorena
+            <h2 id="a-propos-lorena" className="text-3xl font-bold mb-10 text-[#B76E79] relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-[#B76E79] after:mt-3">
+              Moi, c&apos;est Lorena
             </h2>
             <p className="text-gray-700 mb-6">
               Diplômée d’un master en informatique et management, je conjugue rigueur scientifique et passion pour les langues et la littérature. Depuis plusieurs années, je développe des applications et interfaces logicielles, mais ce qui me motive le plus, c’est comprendre, analyser et transmettre l’information, que ce soit à travers le code ou les mots.
@@ -141,16 +142,16 @@ export default function QuiSuisJePage() {
             </p>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <img src="/lorena-moi.png" alt="Lorena" className="w-[500px]" />
+            <img src="/lorena-moi.png" alt="Portrait de Lorena Guedouani" className="w-[500px]" />
           </div>
         </div>
       </section>
 
-      <section id="formations" className="bg-white py-12">
+      <section id="formations" aria-labelledby="formations-titre" className="bg-white py-12">
         <div className="max-w-5xl mx-auto px-6 space-y-6">
-          <h3 className="text-2xl font-bold text-[#B76E79] mb-8 text-center">
+          <h2 id="formations-titre" className="text-2xl font-bold text-[#B76E79] mb-8 text-center">
             Formations
-          </h3>
+          </h2>
           {formations.map((item, i) => (
             <Card
               key={i}
@@ -160,7 +161,7 @@ export default function QuiSuisJePage() {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-[#B76E79]/10 flex items-center justify-center">
-                      <img src={item.icon} className="w-6" />
+                      <img src={item.icon} className="w-6" alt="" aria-hidden="true" />
                     </div>
                     <div>
                       <CardTitle className="text-gray-800 text-lg">
@@ -181,11 +182,11 @@ export default function QuiSuisJePage() {
         </div>
       </section>
 
-      <section id="experiences" className="bg-white py-12">
+      <section id="experiences" aria-labelledby="experiences-titre" className="bg-white py-12">
         <div className="max-w-6xl mx-auto px-6 space-y-6">
-          <h3 className="text-2xl font-bold text-[#B76E79] mb-8 text-center">
+          <h2 id="experiences-titre" className="text-2xl font-bold text-[#B76E79] mb-8 text-center">
             Expériences
-          </h3>
+          </h2>
           {experiences.map((exp, i) => (
             <Card
               key={i}
@@ -203,11 +204,13 @@ export default function QuiSuisJePage() {
                   </div>
                   <div className="flex flex-col sm:items-end gap-2">
                     <div className="flex items-center text-sm text-gray-500 gap-1">
-                      <img src="/calendrier.svg" className="w-4 h-4" />
+                      <img src="/calendrier.svg" className="w-4 h-4" alt="" aria-hidden="true" />
+                      <span className="sr-only">Période : </span>
                       {exp.period}
                     </div>
                     <div className="flex items-center text-sm text-gray-500 gap-1">
-                      <img src="/pin.svg" className="w-4 h-4" />
+                      <img src="/pin.svg" className="w-4 h-4" alt="" aria-hidden="true" />
+                      <span className="sr-only">Lieu : </span>
                       {exp.location}
                     </div>
                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#B76E79]/10 text-[#B76E79] border border-[#B76E79]/20">
@@ -226,11 +229,11 @@ export default function QuiSuisJePage() {
         </div>
       </section>
 
-      <section id="diplomes" className="bg-white py-12">
+      <section id="diplomes" aria-labelledby="diplomes-titre" className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="text-2xl font-bold text-[#B76E79] mb-8 text-center">
+          <h2 id="diplomes-titre" className="text-2xl font-bold text-[#B76E79] mb-8 text-center">
             Diplômes & Certifications
-          </h3>
+          </h2>
 
           <Card className="group card-hover">
             <CardContent className="p-8">
@@ -248,7 +251,8 @@ export default function QuiSuisJePage() {
                           <img
                             src={item.icon}
                             className="w-4 h-4"
-                            alt={item.title}
+                            alt=""
+                            aria-hidden="true"
                           />
                         )}
                         <span className="text-sm text-gray-800 font-semibold">

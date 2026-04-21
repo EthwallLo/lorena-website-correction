@@ -40,9 +40,12 @@ export default function RootLayout({
         <title>Au mot juste | Correction, relecture et réécriture professionnelle</title>
       </head>
       <body className={`${montserrat.className} bg-white text-gray-900`}>
+        <a href="#contenu-principal" className="skip-link">
+          Aller au contenu principal
+        </a>
         <Header />
 
-        <main>{children}</main>
+        <main id="contenu-principal">{children}</main>
 
         <Footer />
         <TextSizeControls />

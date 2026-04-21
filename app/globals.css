@@ -4,6 +4,10 @@ html, body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-padding-top: 6rem;
+}
+
 html[data-text-size="small"] {
   font-size: 93.75%;
 }
@@ -46,6 +50,30 @@ button, a {
   cursor: pointer;
 }
 
+:focus-visible {
+  outline: 3px solid #B76E79;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  transform: translateY(-200%);
+  border-radius: 9999px;
+  background: #ffffff;
+  color: #B76E79;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(183, 110, 121, 0.16);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -76,5 +104,20 @@ button, a {
 @layer utilities {
   .animate-blink {
     animation: blink 1s steps(1, end) infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

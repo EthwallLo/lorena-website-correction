@@ -2,6 +2,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="w-full min-h-screen flex flex-col">
       <section
+        aria-labelledby="confidentialite-titre"
         className="relative w-full h-[45vh] flex justify-center items-center"
         style={{
           backgroundImage: "url('/image-carnet.webp')",
@@ -9,15 +10,15 @@ export default function PrivacyPolicyPage() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/10"></div>
+        <div aria-hidden="true" className="absolute inset-0 bg-black/10"></div>
 
         <div className="relative z-10 text-center px-6 flex flex-col items-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-800 after:mt-3 after:mx-auto">
+          <h1 id="confidentialite-titre" className="text-4xl md:text-5xl font-bold text-gray-800 after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-800 after:mt-3 after:mx-auto">
             Politique de confidentialité
           </h1>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
+        <div aria-hidden="true" className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-white pointer-events-none"></div>
         <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200/50 text-gray-700 text-[10px] italic px-1 py-0.5 rounded rotate-90 origin-left">
           Photo : Jess Bailey / Unsplash
         </div>

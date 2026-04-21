@@ -75,7 +75,8 @@ export default function NotFound() {
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f5e5e8] sm:h-14 sm:w-14 md:h-16 md:w-16">
                 <Image
                   src="/plume-rose.svg"
-                  alt="Plume decorative"
+                  alt=""
+                  aria-hidden="true"
                   width={34}
                   height={34}
                   className="h-6 w-6 sm:h-7 sm:w-7 md:h-[34px] md:w-[34px]"
@@ -107,7 +108,7 @@ export default function NotFound() {
                         {link.description}
                       </p>
                     </div>
-                    <span className="hidden text-xl text-[#B76E79] transition group-hover:translate-x-1 lg:block lg:text-2xl">
+                    <span aria-hidden="true" className="hidden text-xl text-[#B76E79] transition group-hover:translate-x-1 lg:block lg:text-2xl">
                       →
                     </span>
                   </div>

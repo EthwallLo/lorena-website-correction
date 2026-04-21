@@ -16,13 +16,14 @@ export default function HomePage() {
       </section>
 
       <section
+        aria-labelledby="accueil-hero"
         className="w-full relative min-h-screen md:min-h-screen flex justify-center items-center bg-cover bg-center"
         style={{ backgroundImage: "url('/image-carnet.webp')" }}
       >
-        <div className="absolute inset-0 bg-black/10"></div>
+        <div aria-hidden="true" className="absolute inset-0 bg-black/10"></div>
         <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6 md:px-12">
           <Typewriter />
-          <p className="md:text-xl text-base leading-relaxed max-w-2xl mx-auto mb-2 text-gray-600 font-medium">
+          <p id="accueil-hero" className="md:text-xl text-base leading-relaxed max-w-2xl mx-auto mb-2 text-gray-600 font-medium">
             Lorena Guedouani - Correction et relecture professionnelle
           </p>
           <p className="text-md md:text-lg max-w-2xl mx-auto text-gray-600">
@@ -37,10 +38,12 @@ export default function HomePage() {
 
       <section
         id="decouvrir"
+        aria-labelledby="pourquoi-correctrice"
         className="relative justify-center items-center bg-white"
         style={{ minHeight: "40vh", paddingTop: "5rem", paddingBottom: "5rem" }}
       >
         <h2
+          id="pourquoi-correctrice"
           className="text-2xl sm:text-3xl font-bold mb-10 text-[#B76E79] relative text-center
           after:content-[''] after:block after:w-[130px] after:h-1 after:bg-[#B76E79] after:mt-3 after:mx-auto"
         >
@@ -85,6 +88,7 @@ export default function HomePage() {
 
       <section
         id="a-propos"
+        aria-labelledby="a-propos-titre"
         className="relative bg-gray-100"
         style={{
           backgroundImage: "url('/image-bureau.webp')",
@@ -96,14 +100,14 @@ export default function HomePage() {
       >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 md:px-12 px-6">
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold mb-6 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3">
+            <h2 id="a-propos-titre" className="text-3xl font-bold mb-6 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3">
               À propos de moi
             </h2>
             <p className="text-gray-700 mb-6">
-              Je m'appelle Lorena et je suis passionnée de linguistique.{" "}
+              Je m&apos;appelle Lorena et je suis passionnée de linguistique.{" "}
             </p>
             <p className="text-gray-700 mb-6">
-              Je souhaite aujourd'hui accompagner les particuliers et
+              Je souhaite aujourd&apos;hui accompagner les particuliers et
               professionnels dans la correction et la relecture de leurs
               documents pour leur permettre de communiquer de manière claire,
               précise et élégante.{" "}
@@ -118,7 +122,7 @@ export default function HomePage() {
           <div className="md:w-1/2 flex justify-center">
             <img
               src="/cadre-lorena.webp"
-              alt="Lorena"
+              alt="Portrait de Lorena Guedouani"
               className="w-full max-w-sm md:w-[500px] rounded-lg mx-auto"
             />
           </div>
@@ -130,10 +134,12 @@ export default function HomePage() {
 
       <section
         id="public"
+        aria-labelledby="services-public"
         className="relative justify-center items-center bg-white"
         style={{ paddingTop: "5rem", paddingBottom: "5rem" }}
       >
         <h2
+          id="services-public"
           className="text-3xl font-bold mb-10 text-[#B76E79] relative text-center
           after:content-[''] after:block after:w-[130px] after:h-1 after:bg-[#B76E79] after:mt-3 after:mx-auto"
         >
@@ -143,7 +149,8 @@ export default function HomePage() {
           <div className="flex flex-col items-center">
             <img
               src="/auteur.svg"
-              alt="Icône auteur"
+              alt=""
+              aria-hidden="true"
               className="w-20 mx-auto mb-6 opacity-90"
             />
             <h3 className="text-xl font-semibold mb-3 text-gray-800">
@@ -159,7 +166,8 @@ export default function HomePage() {
           <div className="flex flex-col items-center">
             <img
               src="/personne.svg"
-              alt="Icône particuliers"
+              alt=""
+              aria-hidden="true"
               className="w-20 mx-auto mb-6 opacity-90"
             />
             <h3 className="text-xl font-semibold mb-3 text-gray-800">
@@ -175,7 +183,8 @@ export default function HomePage() {
           <div className="flex flex-col items-center">
             <img
               src="/pro.svg"
-              alt="Icône professionnels"
+              alt=""
+              aria-hidden="true"
               className="w-20 mx-auto mb-6 opacity-90"
             />
 
@@ -192,7 +201,8 @@ export default function HomePage() {
           <div className="flex flex-col items-center">
             <img
               src="/maison.svg"
-              alt="Icône maisons d'édition"
+              alt=""
+              aria-hidden="true"
               className="w-20 mx-auto mb-6 opacity-90"
             />
 
@@ -210,6 +220,7 @@ export default function HomePage() {
 
       <section
         id="prestations"
+        aria-labelledby="prestations-titre"
         className="relative justify-center items-center"
         style={{
           backgroundImage: "url('/image-carnet-2.webp')",
@@ -220,14 +231,15 @@ export default function HomePage() {
           paddingBottom: "5rem",
         }}
       >
-        <h2 className="text-3xl font-bold mb-12 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 text-center after:mx-auto">
+        <h2 id="prestations-titre" className="text-3xl font-bold mb-12 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 text-center after:mx-auto">
           Mes prestations
         </h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-12">
           <div className="md:col-start-2 bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
             <img
               src="/plume.svg"
-              alt="Correction"
+              alt=""
+              aria-hidden="true"
               className="w-20 mx-auto mb-6 opacity-90"
             />
             <h3 className="text-xl font-semibold text-gray-800 mb-4">

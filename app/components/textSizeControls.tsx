@@ -60,7 +60,11 @@ export default function TextSizeControls() {
 
   return (
     <div className="fixed bottom-4 left-4 z-40 sm:bottom-6 sm:left-6">
-      <div className="flex items-center gap-1 rounded-full border border-[#d7bcc1] bg-white/90 p-1 shadow-lg shadow-[#B76E79]/10 backdrop-blur-sm">
+      <div
+        role="group"
+        aria-label="Réglage de la taille du texte"
+        className="flex items-center gap-1 rounded-full border border-[#d7bcc1] bg-white/90 p-1 shadow-lg shadow-[#B76E79]/10 backdrop-blur-sm"
+      >
         {textSizes.map((size) => {
           const isActive = activeSize === size.id;
 
