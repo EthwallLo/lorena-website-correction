@@ -7,10 +7,15 @@ import BackToTopButton from "./components/backToTopButton";
 import TextSizeControls from "./components/textSizeControls";
 import { montserrat } from "./fonts";
 
+const siteTitle =
+  "Au mot juste | Correction, relecture et réécriture professionnelle";
+
+const siteDescription =
+  "Correction, relecture, réécriture et traduction anglais-français pour des textes clairs, fluides et professionnels : manuscrits, CV, contenus web et documents.";
+
 export const metadata = {
-  title: "Au mot juste | Correction, relecture et réécriture professionnelle",
-  description:
-    "Correctrice freelance spécialisée en relecture professionnelle et correction de textes. J’améliore l’orthographe, la grammaire, la syntaxe et le style de vos écrits : manuscrits, CV, documents professionnels et contenus web.",
+  title: siteTitle,
+  description: siteDescription,
   icon: "/icon.png",
   verification: {
     google: "MSUVmcbKfJXbo9LdJIxFVAE9yCsROgxazl10DETeE-w",
@@ -19,9 +24,8 @@ export const metadata = {
     canonical: "https://aumotjuste-correction.fr",
   },
   openGraph: {
-    title: "Au mot juste | Correction, relecture et réécriture professionnelle",
-    description:
-      "Correctrice freelance spécialisée en relecture professionnelle et correction de textes.",
+    title: siteTitle,
+    description: siteDescription,
     url: "https://aumotjuste-correction.fr",
     siteName: "Au mot juste",
     type: "website",
@@ -37,7 +41,6 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <link rel="icon" href="/icon.png" />
-        <title>Au mot juste | Correction, relecture et réécriture professionnelle</title>
       </head>
       <body className={`${montserrat.className} bg-white text-gray-900`}>
         <a href="#contenu-principal" className="skip-link">
