@@ -2,6 +2,8 @@ import Typewriter from "./components/typewriter";
 import ScrollButton from "./components/scrollButton";
 import ParcoursButton from "./components/parcoursButton";
 import CorrectionButton from "./components/correctionButton";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -234,8 +236,8 @@ export default function HomePage() {
         <h2 id="prestations-titre" className="text-3xl font-bold mb-12 text-gray-600 relative after:content-[''] after:block after:w-[130px] after:h-1 after:bg-gray-600 after:mt-3 text-center after:mx-auto">
           Mes prestations
         </h2>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-12">
-          <div className="md:col-start-2 bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
+          <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300 flex flex-col">
             <img
               src="/plume.svg"
               alt=""
@@ -250,7 +252,36 @@ export default function HomePage() {
               ponctuation, mais aussi reformulation lorsque cela est nécessaire
               afin d’assurer un texte fluide, clair et professionnel.
             </p>
-            <CorrectionButton />
+            <div className="mt-auto">
+              <CorrectionButton />
+            </div>
+          </div>
+          <div className="bg-white shadow-md rounded-2xl p-8 text-center hover:shadow-xl transition-shadow duration-300 flex flex-col">
+            <Image
+              src="/langue.svg"
+              alt=""
+              aria-hidden="true"
+              className="w-20 mx-auto mb-6 opacity-90 grayscale brightness-75"
+              width={80}
+              height={80}
+            />
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              Traduction
+            </h3>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Traduction de textes de l&apos;anglais vers le français, puis
+              relecture attentive du texte traduit afin d&apos;en vérifier la
+              justesse, la fluidité, la cohérence et le ton. L&apos;objectif est
+              d&apos;obtenir un texte naturel, clair et fidèle à votre intention.
+            </p>
+            <div className="mt-auto">
+              <Link
+                href="/traduction"
+                className="inline-flex px-6 py-3 bg-[#B76E79] text-white rounded-md hover:bg-[#a4626c] transition-colors duration-300"
+              >
+                En savoir plus
+              </Link>
+            </div>
           </div>
         </div>
         <div className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200/50 text-gray-700 text-[10px] italic px-1 py-0.5 rounded rotate-90 origin-left">

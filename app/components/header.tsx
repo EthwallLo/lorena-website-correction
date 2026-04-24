@@ -45,6 +45,9 @@ export default function Header() {
             <NavLink href="/correction">Correction</NavLink>
           </li>
           <li>
+            <NavLink href="/traduction">Traduction</NavLink>
+          </li>
+          <li>
             <NavLink href="/qui-suis-je">Qui suis-je</NavLink>
           </li>
           <li>
@@ -95,6 +98,11 @@ export default function Header() {
             <li>
               <NavLink href="/correction" onClick={() => setOpen(false)}>
                 Correction
+              </NavLink>
+            </li>
+            <li>
+              <NavLink href="/traduction" onClick={() => setOpen(false)}>
+                Traduction
               </NavLink>
             </li>
             <li>
