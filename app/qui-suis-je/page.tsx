@@ -48,10 +48,16 @@ const experiences = [
 ];
 
 const formations = [
+    {
+    title: "Master Sciences du Langage (Bac+5)",
+    institution: "Université Rouen Normandie",
+    period: "2026-2028 (en cours)",
+    icon: "/ecole-rose.svg",
+  },
   {
     title: "Licence Sciences du langage mineure Anglais (Bac+3)",
     institution: "Université Sorbonne Nouvelle",
-    period: "2026 (en cours)",
+    period: "2026",
     icon: "/ecole-rose.svg",
   },
   {
